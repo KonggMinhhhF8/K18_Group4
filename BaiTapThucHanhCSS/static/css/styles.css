@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+html {
+    background-image: url("../images/group-image.svg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+}
+
+html {
+    font-size: 16px;
+}
+
+.bg-color {
+    background-color: #1A1A1A;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid transparent;
+}
+
+ul {
+    list-style: none;
+}
+
+/*.container {*/
+/*    max-width: 100%;*/
+/*}*/
+
+/* * * Thiet bi Table & Mobile: @media screen and (max-width: 991px) * * */
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 15px;
+    }
+
+    .container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+/* * * Thiet bi Mobile: @media screen and (max-width: 767px) * * */
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
