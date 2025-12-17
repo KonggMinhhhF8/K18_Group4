@@ -114,16 +114,23 @@ li:nth-child(3){
 .main{
     margin: 150px auto 0px;
 }
+.container01{
+    width: 1596px;
+    height: 1362px;
+    margin-bottom: 150px;
+}
 .container__text{
     width: 1596px;
     height: 140px;
     margin-bottom: 80px;
+    padding-right: 300px;
 }
 .container__text h2{
     font-weight: 400;
     font-size: 48px;
     line-height: 150%;
     color: #CAFF33;
+    margin-bottom: 14px;
 }
 .container__text p{
     font-weight: 300;
@@ -215,4 +222,85 @@ li:nth-child(3){
 .container__sub02--img img:first-child{
     position: absolute;
     left: 0;
+}
+.container__sub02{
+    z-index: 1;
+    bottom: 100px;
+}
+
+/* press */
+.container02{
+    width: 1596px;
+    height: 1819px;
+}
+.container02 .container__text{
+    width: 1596px;
+    height: 113px;
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+.container02 h2{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 150%;
+    color: #CAFF33;
+    margin-bottom: 14px;
+}
+.container02 p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    color: #B3B3B3;
+}
+.container__press{
+    width: 1596px;
+    height: 1626px;
+}
+.press01, .press02{
+    width: 1596px;
+    height: 798px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.card{
+    width: 783px;
+    background: #262626;
+    border-radius: 40px 40px 16px 16px;
+}
+.card img{
+    padding: 30px 30px 51px;
+}
+.card__content{
+    padding: 0 30px 57px;
+}
+.card__content p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    padding: 0 30px;
+}
+.card__content--title{
+    padding: 0 30px 30px;
+}
+.card__content--title h3{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+.card__content--info{
+    display: flex;
+    gap: 10px;
+    color: #B3B3B3;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+}
+.card__content--date{
+    border: 1px solid #262626;
+    padding: 8px 16px;
+    border-radius: 68px;
+    background: #1A1A1A;
 }
