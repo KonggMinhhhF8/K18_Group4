@@ -7,13 +7,14 @@ body{
     font-family: 'Lexend', sans-serif;
     color: white;
     width: 1920px;
+    /*min-height: 100vh;*/
     height: 5223px;
     margin: 0 auto;
     background-color: #1A1A1A;
 }
 .container{
     width: 1596px;
-    height: 950px;
+    height: auto;
     margin: 0 auto;
     max-width: calc(100% - 48px);
     background-color: #191919;
@@ -303,4 +304,121 @@ li:nth-child(3){
     padding: 8px 16px;
     border-radius: 68px;
     background: #1A1A1A;
+}
+
+/* footer */
+footer{
+    background: red;
+    width: 100%;
+    height: 578px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 162px 50px;
+    background: #1C1C1C;
+    margin-top: 150px;
+}
+.footer__heading{
+    width: 1596px;
+    height: 117px;
+}
+.footer__content{
+    width: 1596px;
+    height: 27px;
+    background: blue;
+}
+.footer__foot{
+    width: 1596px;
+    height: 84px;
+    background: #1A1A1A;
+}
+.footer__heading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+.footer__heading .navbar__item:nth-child(3){
+    background-color: transparent;
+}
+.footer__btn{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.footer__btn img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.footer__btn button{
+    color: #E4E4E7;
+}
+.btn-reset {
+    background: none;      /* xóa màu nền xám mặc định */
+    border: none;          /* xóa viền nổi mặc định */
+    padding: 0;            /* xóa khoảng cách đệm mặc định */
+    outline: none;         /* xóa viền xanh khi click (lưu ý: nên thay thế bằng hiệu ứng khác để hỗ trợ người dùng dùng bàn phím) */
+    cursor: pointer;       /* thêm icon bàn tay khi di chuột vào để người dùng biết là bấm được */
+    font: inherit;         /* kế thừa font chữ từ cha, tránh bị lỗi font mặc định của button */
+}
+.footer__btn > div {
+    display: flex;        /* Kích hoạt flexbox cho từng nhóm (icon + text) */
+    align-items: center;  /* Căn giữa icon và chữ theo trục dọc */
+}
+.footer__foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #262626;
+    border-radius: 100px;
+    padding: 16px 30px 16px 16px;
+}
+.foot__social{
+    display: flex;
+    gap: 14px;
+    border-radius: 50px;
+}
+.social {
+    width: auto;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 14px;
+    background: #CAFF33;
+    display: flex;
+}
+.footer__foot span{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    color: #B3B3B3;
+}
+.foot-container{
+    display: flex;
+    gap: 12px;
+}
+.foot-container a{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    color: #B3B3B3;
+}
+/* Kiểu dáng cho dấu ngăn cách */
+.divider {
+    color: #505050; /* Màu tối hơn một chút cho dấu | */
+    font-weight: 300;
+}
+.line{
+    max-width: 1596px;
+    width: 100%;
+    height: 0px;
+    border-top: 1px solid #262626;
+
 }
