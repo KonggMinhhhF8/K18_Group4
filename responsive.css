@@ -9,7 +9,7 @@
 }
 /* mobile breakpoint */
 @media screen and (max-width: 767px){
-    header{
+    .header{
         display: none;
     }
 }
