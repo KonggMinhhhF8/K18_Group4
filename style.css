@@ -424,11 +424,3 @@ footer{
     height: 0px;
     border-top: 1px solid #262626;
 }
-
-/* responsive */
-/* pc breakpoint */
-@media screen and (min-width: 992px){}
-/* tablet breakpoint */
-@media screen and (min-width: 768px) and (max-width: 991px){}
-/* mobile breakpoint */
-@media screen and (max-width: 767px){}
