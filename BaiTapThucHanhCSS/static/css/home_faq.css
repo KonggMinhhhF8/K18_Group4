@@ -90,7 +90,7 @@
     font-weight: 400;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .container {
         margin-left: 16px;
         margin-right: 16px;
@@ -136,7 +136,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .container {
         margin-left: 16px;
         margin-right: 16px;
