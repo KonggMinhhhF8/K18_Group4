@@ -21,8 +21,6 @@
     display: flex;
     align-items: center;
     border-radius: 61px;
-    /*width: 357px;*/
-    /*width: 50%;*/
     background: #262626;
     width: fit-content;
 }

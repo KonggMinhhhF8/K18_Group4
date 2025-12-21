@@ -81,6 +81,14 @@
 
 /* * * Thiet bi Table & Mobile: @media screen and (max-width: 991px) * * */
 @media screen and (max-width: 991px) {
+    .header__nav ul li a {
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+
+    .header__active {
+        font-size: 14px;
+    }
 
 }
 

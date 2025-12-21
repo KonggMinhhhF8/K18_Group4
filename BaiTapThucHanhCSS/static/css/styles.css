@@ -7,9 +7,9 @@
 
 html {
     background-image: url("../images/group-image.svg") ;
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left top;
+    background-size: auto;
     background-attachment: fixed;
     background-color: #1A1A1A;
     color: #FFFFFF;
@@ -39,10 +39,6 @@ ul {
 
 /* * * Thiet bi Table & Mobile: @media screen and (max-width: 991px) * * */
 @media screen and (max-width: 991px) {
-    html {
-        font-size: 15px;
-    }
-
     .container {
         margin-left: 16px;
         margin-right: 16px;
@@ -50,7 +46,7 @@ ul {
 }
 
 /* * * Thiet bi Mobile: @media screen and (max-width: 767px) * * */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     html {
         font-size: 14px;
     }
