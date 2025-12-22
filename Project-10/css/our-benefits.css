@@ -137,9 +137,8 @@
         margin-top: 7.5rem;
     }
     .our-benefits__text {
-        text-align: center;
         gap: 10px;
-        padding-right: 0;
+        padding-right: 7.5rem;
     }
     .our-benefits__content {
         gap: 60px;

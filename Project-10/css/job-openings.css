@@ -102,9 +102,8 @@
     }
 
     .job-openings__text {
-        text-align: center;
         gap: 10px;
-        padding-right: 0;
+        padding-right: 7.5rem;
     }
 
     .job-openings__content {

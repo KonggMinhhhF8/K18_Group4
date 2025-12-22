@@ -46,9 +46,8 @@
         margin-top: 7.5rem;
     }
     .our-values__text {
-        text-align: center;
         gap: 10px;
-        padding-right: 0;
+        padding-right: 7.5rem;
     }
     .title {
         font-size: 2rem;
@@ -60,7 +59,7 @@
         gap: 60px;
     }
     .our-values__card__top__left, .our-values__card__top__right, .our-values__card__bottom__left, .our-values__card__bottom__right {
-        max-width: 610px;
+        max-width: 100%;
         padding-left: 1.5rem;
         gap: 20px;
     }
