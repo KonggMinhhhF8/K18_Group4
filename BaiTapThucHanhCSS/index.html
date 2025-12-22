@@ -5,13 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Demo Layout10</title>
+    <title>Demo Layout 10</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/styles.css">
-    <link rel="stylesheet" href="static/css/headers.css">
-    <link rel="stylesheet" href="static/css/hero.css">
+    <link rel="stylesheet" href="static/css/home_styles.css">
+    <link rel="stylesheet" href="static/css/home_headers.css">
+    <link rel="stylesheet" href="static/css/home_hero.css">
     <link rel="stylesheet" href="static/css/products.css">
     <link rel="stylesheet" href="static/css/home_cases.css">
     <link rel="stylesheet" href="static/css/home_features.css">
@@ -22,32 +22,34 @@
 <body>
     <input type="checkbox" id="toggle-menu" hidden>
     <header class="header container">
-        <div class="header__bar">
-            <div class="header__logo">
-                <a href="#">
-                    <img src="static/icons/logo-page.svg" alt="logo">
-                </a>
-            </div>
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Security</a></li>
-                </ul>
-            </nav>
-            <div class="header__active">
-                <a class="header__active--signup" href="">Sign Up</a>
-                <a class="header__active--login" href="">Login</a>
-                <!--                <a class="header__active&#45;&#45;icon" href="">-->
-                <!--                    <img src="static/icons/header-btn-icon.svg" alt="btnicon">-->
-                <!--                </a>-->
-                <label for="toggle-menu" class="header__menu--open">
-                    <img src="static/responsive/header-btn-icon.svg" alt="header-btn-icon">
-                </label>
-                <label for="toggle-menu" class="header__menu--close">
-                    <img src="static/responsive/x-mark.svg" alt="x-mark">
-                </label>
+        <div  class="header__bar__fixed">
+            <div class="header__bar">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="static/icons/logo-page.svg" alt="logo">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </nav>
+                <div class="header__active">
+                    <a class="header__active--signup" href="">Sign Up</a>
+                    <a class="header__active--login" href="">Login</a>
+                    <!--                <a class="header__active&#45;&#45;icon" href="">-->
+                    <!--                    <img src="static/icons/header-btn-icon.svg" alt="btnicon">-->
+                    <!--                </a>-->
+                    <label for="toggle-menu" class="header__menu--open">
+                        <img src="static/responsive/header-btn-icon.svg" alt="header-btn-icon">
+                    </label>
+                    <label for="toggle-menu" class="header__menu--close">
+                        <img src="static/responsive/x-mark.svg" alt="x-mark">
+                    </label>
+                </div>
             </div>
         </div>
     </header>
@@ -61,56 +63,120 @@
                 </div>
                 <div class="home__hero_bar__tag--title">No LLC Required, No Credit Check.</div>
             </div>
-            <h1>Welcome to YourBank
-                Empowering Your <span>Financial Journey</span></h1>
+            <h1>Welcome to YourBank Empowering Your <span>Financial Journey</span></h1>
             <p>At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs.</p>
             <div class="home__hero_bar__active">
                 <a href="">Open Account</a>
             </div>
         </div>
-        <div class="home__hero__detail">
-            <div class="home__hero_your">
-                <div class="home_hero_card">
-                    <div class="home_hero_item">
-                        <div class="home_hero_item--icon"></div>
-                        <div class="home_hero_item--title"></div>
-                        <div class="home_hero_item--money"></div>
+
+        <div class="home__hero__body">
+            <div class="home__hero__main">
+                <div class="home__hero__group">
+                    <div class="home__hero__monthly">
+                        <div class="home__hero__monthly--icon">
+                            <img src="static/icons/heros/monthly-icon.svg" alt="monthly-icon">
+                        </div>
+                        <div class="home__hero__monthly__detail">
+                            <span>+ $5000,00</span>
+                            <span>Monthly Income</span>
+                        </div>
                     </div>
-                    <div class="home_hero_item">
-                        <div class="home_hero_item--icon"></div>
-                        <div class="home_hero_item--title"></div>
-                        <div class="home_hero_item--money"></div>
+                    <div class="home__hero__your">
+                        <h4>Your Transactions</h4>
+                        <div class="home__hero__your__card">
+                            <div class="home__hero__your__items">
+                                <div class="home__hero__your--icon">
+                                    <img src="static/icons/heros/your-icon.svg" alt="your-icon-icon">
+                                </div>
+                                <div class="home__hero__your__body">
+                                    <div class="home__hero__your__title">Transaction</div>
+                                    <div class="home__hero__your__detail">
+                                        <div class="home__hero__monthly__detail--title">Joel Kenley</div>
+                                        <div class="home__hero__your__detail--price">-$68.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home__hero__your__items">
+                                <div class="home__hero__your--icon">
+                                    <img src="static/icons/heros/your-icon.svg" alt="your-icon-icon">
+                                </div>
+                                <div class="home__hero__your__body">
+                                    <div class="home__hero__your__title">Transaction</div>
+                                    <div class="home__hero__your__detail">
+                                        <div class="home__hero__monthly__detail--title">Joel Kenley</div>
+                                        <div class="home__hero__your__detail--price">-$68.00</div>
+                                    </div>
+                                </div>
+
+                                <div class="home__hero__your__items--overlay-2"></div>
+                            </div>
+                            <div class="home__hero__your__items">
+                                <div class="home__hero__your--icon">
+                                    <img src="static/icons/heros/your-icon.svg" alt="your-icon-icon">
+                                </div>
+                                <div class="home__hero__your__body">
+                                    <div class="home__hero__your__title">Transaction</div>
+                                    <div class="home__hero__your__detail">
+                                        <div class="home__hero__monthly__detail--title">Joel Kenley</div>
+                                        <div class="home__hero__your__detail--price">-$68.00</div>
+                                    </div>
+                                </div>
+                                <div class="home__hero__your__items--overlay-3"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="home_hero_item">
-                        <div class="home_hero_item--icon"></div>
-                        <div class="home_hero_item--title"></div>
-                        <div class="home_hero_item--money"></div>
+                    <div class="home__hero__money">
+                        <h4>Money Exchange</h4>
+                        <div class="home__hero__national">
+                            <div class="home__hero__national__card">
+                                <div class="home__hero__national__items">
+                                    <div class="home__hero__national__header">
+                                        <div class="home__hero__national__header--icon">
+                                            <img src="static/icons/heros/money-irn-icon.svg" alt="money-irn-icon">
+                                        </div>
+                                        <span>INR</span>
+                                    </div>
+                                    <div class="home__hero__national__nav">Indian Rupees</div>
+                                </div>
+                                <div class="home__hero__national__money">5,0000</div>
+                            </div>
+                            <div class="home__hero__national__card">
+                                <div class="home__hero__national__items">
+                                    <div class="home__hero__national__header">
+                                        <div class="home__hero__national__header--icon">
+                                            <img src="static/icons/heros/money-usd-icon.svg" alt="money-uds-icon">
+                                        </div>
+                                        <span>USD</span>
+                                    </div>
+                                    <div class="home__hero__national__nav">United States Dollar</div>
+                                </div>
+                                <div class="home__hero__national__money">12.00</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="home_hero_item">
-                        <div class="home_hero_item--icon"></div>
-                        <div class="home_hero_item--title"></div>
-                        <div class="home_hero_item--money"></div>
+                    <div class="home__hero__btn">
+                        <a href="">Exchange</a>
                     </div>
                 </div>
-            </div>
-            <div class="home__hero__money">
-                <div class="home__hero__national">
-                    <div class="home__hero__national__inr">
-                        <div class="home__hero__national__inr--icon"></div>
-                        <div class="home__hero__national__inr--title">INR</div>
-                        <div class="home__hero__national__inr--detail">Indian Rupees</div>
-                        <div class="home__hero__national__inr--money">5,0000</div>
-                    </div>
-                    <div class="home__hero__national__usd">
-                        <div class="home__hero__national__usd--icon"></div>
-                        <div class="home__hero__national__usd--title">USD</div>
-                        <div class="home__hero__national__usd--detail">United States Dollar</div>
-                        <div class="home__hero__national__usd--money">12.00</div>
+
+                <div class="home__hero__active">
+                    <div class="home__hero__active__btn">
+                        <div  class="home__hero__active__box">
+                            <div class="home__hero__active__box1">Supported Currency</div>
+                            <div class="home__hero__active__box2">
+                                <div class="home__hero__active__box22">
+                                    <a href="">
+                                        <img src="static/icons/heros/box22-1-icon.svg" alt="box22-1">
+                                    </a>
+                                </div>
+                                <div class="home__hero__active__box22"><a href=""><img src="static/icons/heros/box22-2-icon.svg" alt="box22-2"></a></div>
+                                <div class="home__hero__active__box22"><a href=""><img src="static/icons/heros/box22-3-icon.svg" alt="box22-3"></a></div>
+                                <div class="home__hero__active__box22"><a href=""><img src="static/icons/heros/box22-4-icon.svg" alt="box22-4"></a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="home__hero__active">
-                <a href="">Exchange</a>
             </div>
         </div>
     </div>

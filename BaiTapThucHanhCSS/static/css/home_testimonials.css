@@ -212,6 +212,10 @@ input[name="testimonial-slide"] {
         margin-right: 16px;
     }
 
+    .home__testimonials__heading {
+        margin-bottom: 50px;
+    }
+
     .home__testimonials__heading h2 {
         font-size: 38px;
     }
@@ -220,6 +224,100 @@ input[name="testimonial-slide"] {
         font-size: 16px;
         margin-bottom: 60px;
     }
+
+    .home__testimonials__title {
+        align-items: flex-start;
+    }
+
+    .home__testimonials__btn--active a {
+        font-weight: 400;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .home__testimonials__item--detail p {
+        font-size: 14px;
+    }
+
+    .home__testimonials__item--bottom {
+        font-size: 16px;
+    }
+
+    .home__testimonials__body > .home__testimonials__next
+    , .home__testimonials__body > .home__testimonials__previous {
+        display: none;
+    }
+
+    .home__testimonials__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home__testimonials__controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .home__testimonials__items {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .home__testimonials__card {
+        gap: 0;
+    }
+
+    #toggle-anime1:checked ~ .home__testimonials__anime .home__testimonials__card {
+        margin-left: 0;
+    }
+
+    #toggle-anime2:checked ~ .home__testimonials__anime .home__testimonials__card {
+        margin-left: -100%;
+    }
+
+    #toggle-anime3:checked ~ .home__testimonials__anime .home__testimonials__card {
+        margin-left: -200%;
+    }
+
+    .prev-to-2
+    ,.prev-to-3
+    , .next-to-2
+    , .next-to-3 {
+        display: none;
+    }
+
+    #toggle-anime2:checked ~ .home__testimonials__controls .home__testimonials__next .next-to-2
+    , #toggle-anime2:checked ~ .home__testimonials__controls .home__testimonials__previous .prev-to-1 {
+        display: block;
+    }
+
+    #toggle-anime2:checked ~ .home__testimonials__controls .home__testimonials__next .next-to-1
+    , #toggle-anime2:checked ~ .home__testimonials__controls .home__testimonials__next .next-to-1 {
+        display: none;
+    }
+
+    #toggle-anime3:checked ~ .home__testimonials__controls .home__testimonials__next .next-to-2
+    , #toggle-anime3:checked ~ .home__testimonials__controls .home__testimonials__previous .prev-to-2 {
+        display: block;
+    }
+
+    #toggle-anime3:checked ~ .home__testimonials__controls .home__testimonials__next .next-to-1
+    , #toggle-anime3:checked ~ .home__testimonials__controls .home__testimonials__previous .prev-to-1 {
+        display: none;
+    }
+
+    .home__testimonials__items {
+        border: 1px solid #262626;
+        border-radius: 12px;
+        z-index: 99;
+    }
+
+    .home__testimonials__shadow-overlay {
+        z-index: 100;
+    }
+/*--*/
 
     .home__testimonials__footer {
         margin-top: 100px;
@@ -275,81 +373,12 @@ input[name="testimonial-slide"] {
     .home__testimonials__title {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .home__testimonials__btn--active a:first-child, .home__testimonials__btn--active a:last-child {
         font-weight: 400;
         font-size: 14px;
-    }
-
-    .home__testimonials__body {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .home__testimonials__controls {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .home__testimonials__items {
-        flex-basis: 100%;
-        width: 100%;
-    }
-
-    .home__testimonials__card {
-        gap: 0;
-    }
-
-    #toggle-anime1:checked ~ .home__testimonials__anime .home__testimonials__card {
-        margin-left: 0;
-    }
-
-    #toggle-anime2:checked ~ .home__testimonials__anime .home__testimonials__card {
-        margin-left: calc(-100%);
-    }
-
-    #toggle-anime3:checked ~ .home__testimonials__anime .home__testimonials__card {
-        margin-left: calc(-200%);
-    }
-
-    .prev-to-2
-    ,.prev-to-3
-    , .next-to-2
-    , .next-to-3 {
-        display: none;
-    }
-
-    #toggle-anime2:checked ~ .home__testimonials__controls .home__testimonials__next .next-to-2
-    , #toggle-anime2:checked ~ .home__testimonials__controls .home__testimonials__previous .prev-to-1 {
-        display: block;
-    }
-
-    #toggle-anime2:checked ~ .home__testimonials__controls .home__testimonials__next .next-to-1
-    , #toggle-anime2:checked ~ .home__testimonials__controls .home__testimonials__next .next-to-1 {
-        display: none;
-    }
-
-    #toggle-anime3:checked ~ .home__testimonials__controls .home__testimonials__next .next-to-2
-    , #toggle-anime3:checked ~ .home__testimonials__controls .home__testimonials__previous .prev-to-2 {
-        display: block;
-    }
-
-    #toggle-anime3:checked ~ .home__testimonials__controls .home__testimonials__next .next-to-1
-    , #toggle-anime3:checked ~ .home__testimonials__controls .home__testimonials__previous .prev-to-1 {
-        display: none;
-    }
-
-    .home__testimonials__items {
-        border: 1px solid #262626;
-        border-radius: 12px;
-        z-index: 99;
-    }
-
-    .home__testimonials__shadow-overlay {
-        z-index: 100;
     }
 
     .home__testimonials__footer {

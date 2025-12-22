@@ -1,3 +1,16 @@
+/*.header {*/
+/*    position: relative;*/
+/*    max-width: 1600px;*/
+/*    margin: 50px auto;*/
+/*}*/
+
+/*.header__bar__fixed {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    z-index: 999;*/
+/*}*/
 
 .header__bar {
     max-width: 1600px;
@@ -9,6 +22,17 @@
     border-radius: 100px;
     background: #1C1C1C;
 }
+
+/*.header__bar {*/
+/*    max-width: 1600px;*/
+/*    margin: 50px auto;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    border: 1px solid #262626;*/
+/*    border-radius: 100px;*/
+/*    background: #1C1C1C;*/
+/*}*/
 
 .header__logo {
     width: 34%;
