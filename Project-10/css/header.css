@@ -76,10 +76,10 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 991px) {
     .container {
-        max-width: 1280px;
-        margin: 0 auto;
+        max-width: 100%;
+        padding: 0 24px;
     }
     .main-nav {
         padding: 0.875rem 1.5rem;
@@ -88,13 +88,24 @@ header {
         width: 116px;
         height: 30px;
     }
+    .nav-list {
+        gap: 2px;
+    }
     .nav-list li a {
+        display: flex;
+        align-items: center;
         font-size: 0.875rem;
+        padding: 0.75rem 0.75rem;
+
     }
     .nav-list li a:focus {
         border-radius: 82px;
-        padding: 0.75rem 1.25rem;
+        padding: 0.75rem 0.75rem;
         background-color: #262626;
+    }
+
+    .nav-list li:hover a {
+        padding: 0.75rem 0.75rem;
     }
     .btn-cta {
         gap: 20px;
@@ -107,10 +118,12 @@ header {
     }
 }
 
-@media screen and (max-width: 390px) {
+                                /*Mobile*/
+
+@media screen and (max-width: 767px) {
     .container {
-        max-width: 358px;
-        margin: 0 auto;
+        width: 100%;
+        padding: 0 16px;
     }
 
     .main-nav {

@@ -40,3 +40,45 @@
     padding: 1.125rem 1.875rem;
     background-color: #CAFF33;
 }
+@media screen and (max-width: 991px) {
+    .banner {
+        margin-top: 7.5rem;
+    }
+    .banner__content {
+        gap: 80px;
+        padding: 2.75rem;
+        text-align: center;
+        flex-direction: column;
+    }
+    .banner__text {
+        gap: 10px;
+    }
+    .banner__text h2 {
+        font-size: 1.875rem;
+    }
+    .banner__img img {
+        width: 202px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .banner {
+        margin-top: 5rem;
+    }
+    .banner__content {
+        gap: 24px;
+        text-align: center;
+        flex-direction: column;
+        padding: 1.875rem;
+    }
+    .banner__img img {
+        width: 151px;
+    }
+    .banner__text h2 {
+        font-size: 1.5rem;
+    }
+    .banner__btn a {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+        width: 100%;
+    }
+}

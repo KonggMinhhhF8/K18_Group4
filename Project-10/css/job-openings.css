@@ -96,3 +96,117 @@
     padding: 1rem 1.875rem;
     text-decoration: none;
 }
+@media screen and (max-width: 991px) {
+    .job-openings {
+        margin-top: 7.5rem;
+    }
+
+    .job-openings__text {
+        text-align: center;
+        gap: 10px;
+        padding-right: 0;
+    }
+
+    .job-openings__content {
+        gap: 60px;
+    }
+
+    .job-openings__card__top {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .job-openings__card {
+        gap: 20px;
+    }
+
+    .job-openings__card__top__left, .job-openings__card__top__right, .job-openings__card__bottom__left {
+        width: 100%;
+        padding: 2.5rem;
+    }
+
+    .job-openings__card__content__header h3 {
+        font-size: 1.5rem;
+    }
+    .job-openings__card__content__header__desc span {
+        padding: 0.375rem 0.625rem;
+        font-size: 1rem;
+    }
+    .job-openings__card__content__header {
+        gap: 10px;
+    }
+    .job-openings__card__content {
+        gap: 40px;
+    }
+    .job-openings__card__content__text {
+        gap: 16px;
+    }
+    .job-openings__btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        width: 115px;
+    }
+    .job-openings__card__content__list ul li img {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .job-openings {
+        margin-top: 5rem;
+    }
+
+    .job-openings__content {
+        gap: 60px;
+    }
+
+    .job-openings__text {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .job-openings__title {
+        font-size: 1.75rem;
+    }
+
+    .job-openings__desc {
+        font-size: 0.875rem;
+    }
+    .job-openings__card__top, .job-openings__card__bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .job-openings__card__top__left, .job-openings__card__top__right, .job-openings__card__bottom__left {
+        max-width: 100%;
+        padding: 1.5rem;
+        gap: 30px;
+    }
+    .job-openings__card__content__header h3 {
+        font-size: 1.25rem;
+    }
+    .job-openings__card__content__header__desc {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .job-openings__card__content__header__desc span {
+        padding: 0.375rem 0.625rem;
+        font-size: 0.875rem;
+    }
+    .job-openings__card__content {
+        gap: 30px;
+    }
+    .job-openings__card__content__title {
+        font-size: 1.25rem;
+    }
+    .job-openings__card__content__list ul li img {
+        width: 20px;
+        height: 20px;
+    }
+    .job-openings__btn {
+        width: 115px;
+        padding: 0.75rem 1.25rem;
+        font-weight: 500;
+        font-size: 0.875rem;
+    }
+}

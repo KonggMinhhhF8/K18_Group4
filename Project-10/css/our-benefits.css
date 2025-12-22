@@ -132,3 +132,140 @@
             rgba(202, 255, 51, 0) 87.22%
     );
 }
+@media screen and (max-width: 991px) {
+    .our-benefits {
+        margin-top: 7.5rem;
+    }
+    .our-benefits__text {
+        text-align: center;
+        gap: 10px;
+        padding-right: 0;
+    }
+    .our-benefits__content {
+        gap: 60px;
+    }
+    .our-benefits__card {
+        gap: 30px;
+    }
+    .our-benefits__card__top__left, .our-benefits__card__bottom__left {
+        max-width: 100%;
+        padding: 2.5rem;
+        gap: 24px;
+        border-radius: 40px 14px 40px 14px;
+    }
+    .our-benefits__card__top__right, .our-benefits__card__bottom__right {
+        border-radius: 14px 40px 14px 40px;
+        max-width: 100%;
+        padding: 2.5rem;
+        gap: 24px;
+    }
+    .our-benefits__card__top, .our-benefits__card__bottom {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .our-benefits__card__text h3 {
+        font-size: 1.25rem;
+    }
+    .our-benefits__card__text {
+        gap: 14px;
+    }
+    .dash {
+        width: 100%;
+        height: 1px;
+        background-image: linear-gradient(to right, #262626 50%, transparent 50%);
+        background-size: 20px 100%;
+        opacity: 1;
+        border: none;
+    }
+    .dash-width {
+        width: 100%;
+        height: 1px;
+        background-image: linear-gradient(to right, #262626 50%, transparent 50%);
+        background-size: 20px 100%;
+        opacity: 1;
+        border: none;
+    }
+    .icon-wrap::before {
+        width: 76px;
+        height: 76px;
+    }
+    .icon-wrap::after {
+        width: 60px;
+        height: 60px;
+        inset: auto;
+    }
+    .icon-wrap img {
+        width: 28px;
+        height: 28px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .our-benefits {
+        margin-top: 5rem;
+    }
+
+    .our-benefits__content {
+        gap: 60px;
+    }
+
+    .our-benefits__text {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .our-benefits__title {
+        font-size: 1.75rem;
+    }
+
+    .our-benefits__desc {
+        font-size: 0.875rem;
+    }
+    .our-benefits__card {
+        gap: 24px;
+    }
+    .our-benefits__card__top, .our-benefits__card__bottom {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .our-benefits__card__top__left, .our-benefits__card__bottom__right, .our-benefits__card__top__right, .our-benefits__card__bottom__left {
+        border-radius: 40px 40px 14px 14px;
+        padding: 1.5rem;
+        gap: 20px;
+    }
+    .our-benefits__card__text {
+        gap: 10px;
+    }
+    .our-benefits__card__text h3 {
+        font-size: 1.125rem;
+    }
+    .icon-wrap img {
+        width: 24px;
+        height: 24px;
+    }
+    .icon-wrap::before {
+        width: 72px;
+        height: 72px;
+    }
+    .icon-wrap::after {
+        width: 56px;
+        height: 56px;
+        inset: auto;
+    }
+    .dash {
+        width: 100%;
+        height: 1px;
+        background-image: linear-gradient(to right, #262626 50%, transparent 50%);
+        background-size: 20px 100%;
+        opacity: 1;
+        border: none;
+    }
+    .dash-width {
+        width: 100%;
+        height: 1px;
+        background-image: linear-gradient(to right, #262626 50%, transparent 50%);
+        background-size: 20px 100%;
+        opacity: 1;
+        border: none;
+    }
+}
