@@ -13,10 +13,11 @@ html {
     background-attachment: fixed;
     background-color: #1A1A1A;
     color: #FFFFFF;
+    font-size: 16px;
 }
 
-html {
-    font-size: 16px;
+body {
+    padding-top: 100px;
 }
 
 .bg-color {
@@ -33,27 +34,15 @@ ul {
     list-style: none;
 }
 
-/*.container {*/
-/*    max-width: 100%;*/
-/*}*/
-
-/* * * Thiet bi Table & Mobile: @media screen and (max-width: 991px) * * */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .container {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin: 0 16px;
     }
 }
 
-/* * * Thiet bi Mobile: @media screen and (max-width: 767px) * * */
 @media screen and (max-width: 768px) {
-    html {
-        font-size: 14px;
-    }
-
     .container {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin: 0 16px;
     }
 }
 

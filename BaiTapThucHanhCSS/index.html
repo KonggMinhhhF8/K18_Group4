@@ -20,16 +20,17 @@
     <link rel="stylesheet" href="static/css/home_footers.css">
 </head>
 <body>
+
     <input type="checkbox" id="toggle-menu" hidden>
-    <header class="header container">
-        <div  class="header__bar__fixed">
-            <div class="header__bar">
-                <div class="header__logo">
+    <header class="home__header">
+        <div  class="home__header__bar__fixed">
+            <div class="home__header__bar">
+                <div class="home__header__logo">
                     <a href="#">
                         <img src="static/icons/logo-page.svg" alt="logo">
                     </a>
                 </div>
-                <nav class="header__nav">
+                <nav class="home__header__nav">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Careers</a></li>
@@ -37,16 +38,13 @@
                         <li><a href="#">Security</a></li>
                     </ul>
                 </nav>
-                <div class="header__active">
-                    <a class="header__active--signup" href="">Sign Up</a>
-                    <a class="header__active--login" href="">Login</a>
-                    <!--                <a class="header__active&#45;&#45;icon" href="">-->
-                    <!--                    <img src="static/icons/header-btn-icon.svg" alt="btnicon">-->
-                    <!--                </a>-->
-                    <label for="toggle-menu" class="header__menu--open">
+                <div class="home__header__active">
+                    <a class="home__header__active--signup" href="">Sign Up</a>
+                    <a class="home__header__active--login" href="">Login</a>
+                    <label for="toggle-menu" class="home__header__menu--open">
                         <img src="static/responsive/header-btn-icon.svg" alt="header-btn-icon">
                     </label>
-                    <label for="toggle-menu" class="header__menu--close">
+                    <label for="toggle-menu" class="home__header__menu--close">
                         <img src="static/responsive/x-mark.svg" alt="x-mark">
                     </label>
                 </div>
@@ -54,6 +52,7 @@
         </div>
     </header>
     <div class="overlay"></div>
+    <!--end header-->
 
     <div class="home__hero container">
         <div class="home__hero__bar">
@@ -180,6 +179,7 @@
             </div>
         </div>
     </div>
+    <!--end banner-->
 
     <div class="home__products container">
         <div class="home__products__heading">
@@ -226,6 +226,7 @@
             </div>
         </div>
     </div>
+    <!--end products-->
 
     <div class="home__cases container">
         <div class="home__cases__heading">
@@ -389,13 +390,13 @@
             </div>
         </div>
     </div>
+    <!--end container-->
 
     <div class="home__features container">
         <div class="home__features__heading">
             <h2>Our <span>Features</span></h2>
             <p>At YourBank, we cater to the diverse needs of individuals and businesses alike, offering a wide range of financial solutions</p>
         </div>
-
         <div class="home__features__body">
             <div class="home__features_active">
                 <ul>
@@ -409,7 +410,9 @@
                     <div class="home__features_items">
                         <div class="home__features__heard">
                             <div class="home__features__heard--title">24/7 Account Access</div>
-                            <div class="home__features__heard--icon"></div>
+                            <div class="home__features__heard--icon">
+                                <a href=""><img src="static/icons/features/Icon.svg" alt="featuresIcon"></a>
+                            </div>
                         </div>
                         <div class="home__features_detail">
                             <span>Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking platform. Check balances, transfer funds, and pay bills with ease.</span>
@@ -418,7 +421,9 @@
                     <div class="home__features_items">
                         <div class="home__features__heard">
                             <div class="home__features__heard--title">Mobile Banking App</div>
-                            <div class="home__features__heard--icon"></div>
+                            <div class="home__features__heard--icon">
+                                <a href=""><img src="static/icons/features/Icon.svg" alt="featuresIcon"></a>
+                            </div>
                         </div>
                         <div class="home__features_detail">
                             <span>Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your accounts, deposit checks, and make payments from your smartphone or tablet.</span>
@@ -429,7 +434,9 @@
                     <div class="home__features_items">
                         <div class="home__features__heard">
                             <div class="home__features__heard--title">Secure Transactions</div>
-                            <div class="home__features__heard--icon"></div>
+                            <div class="home__features__heard--icon">
+                                <a href=""><img src="static/icons/features/Icon.svg" alt="featuresIcon"></a>
+                            </div>
                         </div>
                         <div class="home__features_detail">
                             <span>Rest assured knowing that your transactions are protected by industry-leading security measures. We employ encryption and multi-factor authentication to safeguard your financial information.</span>
@@ -438,7 +445,9 @@
                     <div class="home__features_items">
                         <div class="home__features__heard">
                             <div class="home__features__heard--title">Bill Pay and Transfers</div>
-                            <div class="home__features__heard--icon"></div>
+                            <div class="home__features__heard--icon">
+                                <a href=""><img src="static/icons/features/Icon.svg" alt="featuresIcon"></a>
+                            </div>
                         </div>
                         <div class="home__features_detail">
                             <span>Save time and avoid late fees with our convenient bill pay service. Set up recurring payments or make one-time transfers between your accounts with just a few clicks.</span>
@@ -448,6 +457,7 @@
             </div>
         </div>
     </div>
+    <!--end features-->
 
     <div class="home__faq container">
         <div class="home__faq__heading">
@@ -496,6 +506,7 @@
             </a>
         </div>
     </div>
+    <!--end faq-->
 
     <div class="home__testimonials container">
         <div class="home__testimonials__heading">
@@ -607,6 +618,7 @@
             </div>
         </div>
     </div>
+    <!--end testimonials-->
 </body>
 <footer>
     <div class="home__footer container">

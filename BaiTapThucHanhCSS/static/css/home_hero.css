@@ -13,7 +13,6 @@
     width: 50%;
 }
 
-
 .home__hero_bar__tag {
     display: flex;
     align-items: center;
@@ -23,19 +22,13 @@
 }
 
 .home__hero_bar__tag--icon {
-    /*background-image: url("../../static/icons/hero_icon.svg");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center;*/
     margin: 10px 6px 10px 12px;
-    /*width: 24px;*/
-    /*height: 24px;*/
 }
 
 .home__hero_bar__tag--title {
     margin: 10px 20px 10px 0;
     font-size: 18px;
     font-weight: 300;
-    /*flex-shrink: 0;*/
     display: inline-block;
 }
 
@@ -121,7 +114,7 @@ h1 span {
     font-weight: 300;
 }
 
-.home__hero__your h4 {
+h4 {
     font-size: 18px;
     font-weight: 500;
 }
@@ -188,7 +181,7 @@ h1 span {
 }
 
 .home__hero__your__items:nth-child(2) {
-    top: 55px;
+    top: 53px;
     z-index: 3;
     width: 90%;
     left: 5%;   /* Căn giữa thẻ: (100% - 90%) / 2 = 5% */
@@ -206,7 +199,7 @@ h1 span {
 }
 
 .home__hero__your__items:nth-child(3) {
-    top: 110px;
+    top: 106px;
     z-index: 1;
     width: 80%;
     left: 10%;
@@ -326,9 +319,6 @@ h1 span {
     max-height: 100%;
 }
 
-/*end*/
-
-/* * * Thiet bi Table & Mobile: @media screen and (max-width: 991px) * * */
 @media screen and (max-width: 992px) {
     .container {
         margin-left: 16px;
@@ -362,7 +352,6 @@ h1 span {
         width: 85%;
     }
 
-
     .home__hero__monthly__detail span:nth-child(1) {
         font-size: 16px;
     }
@@ -371,9 +360,22 @@ h1 span {
         font-size: 14px;
     }
 
+    .home__hero__your__title {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .home__hero__monthly__detail--title {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .home__hero__your__detail--price {
+        font-size: 18px;
+        font-weight: 400;
+    }
 }
 
-/* * * Thiet bi Mobile: @media screen and (max-width: 767px) * * */
 @media screen and (max-width: 768px) {
     .container {
         margin-left: 16px;
@@ -383,7 +385,6 @@ h1 span {
     .home__hero {
         flex-direction: column;
     }
-
 
     .home__hero__bar
     , .home__hero__detail
@@ -402,7 +403,6 @@ h1 span {
 
     h1 {
         font-size: 28px;
-        font-weight: 500;
         margin-top: 12px;
         margin-bottom: 12px;
     }
@@ -421,8 +421,7 @@ h1 span {
     }
 
     .home__hero__main {
-        padding-left: 26px;
-        padding-right: 26px;
+        padding: 0 26px;
     }
 
     .home__hero__group {
@@ -437,5 +436,8 @@ h1 span {
         font-size: 14px;
     }
 
+    .home__hero__your__detail--price {
+        font-size: 16px;
+    }
 }
 

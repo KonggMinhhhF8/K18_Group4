@@ -89,14 +89,6 @@
     font-weight: 400;
 }
 
-.home__features__heard--icon {
-    background-image: url("../icons/features/Icon.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 34px;
-    height: 34px;
-}
-
 .home__features_detail span {
     color: #B3B3B3;
     font-size: 18px;
