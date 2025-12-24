@@ -327,6 +327,7 @@ h4 {
 
     .home__hero {
         gap: 100px;
+        margin: 60px;
     }
 
     .home__hero_bar__tag--title {
@@ -374,6 +375,11 @@ h4 {
         font-size: 18px;
         font-weight: 400;
     }
+
+    .home__hero__national__nav
+    , .home__hero__national__money {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -383,6 +389,7 @@ h4 {
     }
 
     .home__hero {
+        margin: 60px;
         flex-direction: column;
     }
 
@@ -438,6 +445,11 @@ h4 {
 
     .home__hero__your__detail--price {
         font-size: 16px;
+    }
+
+    .home__hero__national__nav
+    , .home__hero__national__money {
+        font-size: 14px;
     }
 }
 

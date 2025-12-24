@@ -89,11 +89,12 @@
     color: #B3B3B3;
 }
 
-/* * * Thiet bi Table & Mobile: @media screen and (max-width: 991px) * * */
-@media screen and (max-width: 991px) {
+
+@media screen and (max-width: 992px) {
     .container {
         margin-left: 16px;
         margin-right: 16px;
+        margin-top : 80px;
     }
 
     .home__products__heading h2 {
@@ -114,13 +115,38 @@
     .home__products__btn--active a {
         padding: 12px;
     }
+
+    .home__products__card {
+        width: calc((100% - 40px) /3 );
+    }
+
+    .home__products__item {
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    .home__products__container {
+        gap: 0;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .home__products__item h4 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .home__products__item p {
+        font-size: 14px;
+    }
 }
 
 /* * * Thiet bi Mobile: @media screen and (max-width: 767px) * * */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .container {
         margin-left: 16px;
         margin-right: 16px;
+        margin-top : 60px;
     }
 
     .home__products__heading {
@@ -165,6 +191,10 @@
     , .home__products__card:nth-child(2) {
         border-right: none;
         border-bottom: 1px solid #262626;
+    }
+
+    .home__products__card {
+        width: 100%;
     }
 
     .home__products__item {

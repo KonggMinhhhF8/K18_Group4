@@ -206,14 +206,18 @@ input[name="testimonial-slide"] {
 }
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .container {
         margin-left: 16px;
         margin-right: 16px;
     }
 
+    .home__testimonials {
+        margin: 60px auto 0 auto;
+    }
+
     .home__testimonials__heading {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     .home__testimonials__heading h2 {
@@ -231,7 +235,7 @@ input[name="testimonial-slide"] {
 
     .home__testimonials__btn--active a {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 16px;
         padding: 12px;
     }
 
@@ -320,11 +324,11 @@ input[name="testimonial-slide"] {
 /*--*/
 
     .home__testimonials__footer {
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .home__testimonials__footer__card {
-        padding: 60px;
+        padding: 50px;
     }
 
     .home__testimonials__footer__items h3 {
@@ -341,7 +345,7 @@ input[name="testimonial-slide"] {
 }
 
 /* * * Thiet bi Mobile: @media screen and (max-width: 767px) * * */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .container {
         margin-left: 16px;
         margin-right: 16px;
@@ -382,13 +386,13 @@ input[name="testimonial-slide"] {
     }
 
     .home__testimonials__footer {
-        margin-top: 80px;
+        margin-top: 50px;
     }
 
     .home__testimonials__footer__card {
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        gap: 30px;
     }
 
     .home__testimonials__footer__items {

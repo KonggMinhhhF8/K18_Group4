@@ -96,6 +96,10 @@
         margin-right: 16px;
     }
 
+    .home__faq {
+        margin: 60px auto 0 auto;
+    }
+
     .home__faq__heading h2 {
         font-size: 38px;
     }
@@ -124,7 +128,7 @@
 
 
     .home__faq__content {
-        padding: 40px;
+        padding: 30px;
     }
 
     .home__faq__item--title {
@@ -134,12 +138,20 @@
     .home__faq__item--detail {
         font-size: 16px;
     }
+
+    .home__faq__active a {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .container {
         margin-left: 16px;
         margin-right: 16px;
+    }
+
+    .home__faq {
+        margin: 60px auto 0 auto;
     }
 
     .home__faq__heading {

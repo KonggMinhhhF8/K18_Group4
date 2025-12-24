@@ -17,7 +17,7 @@
 }
 
 .home__header__logo {
-    width: 34%;
+    max-width: 34%;
     margin: 20px auto 20px 30px;
     flex-shrink: 1;
 }
@@ -46,7 +46,7 @@
 }
 
 .home__header__active {
-    width: 33%;
+    max-width: 33%;
     display: flex;
     justify-content: end;
     margin: 20px 34px 20px auto;
