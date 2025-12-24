@@ -8,10 +8,11 @@ body{
     background: #1A1A1A;
 }
 .container{
+    width: 100%;
     min-width: min(1596px,100%);
     height: auto;
     padding: 0 162px;
-
+    margin: 0 auto;
 }
 
 /* header */
@@ -24,6 +25,7 @@ body{
     border: 1px solid #262626;
     border-radius: 100px;
     background: #1C1C1C;
+    margin-bottom: 53px;
 }
 .header__logo{
     display:flex;
@@ -61,24 +63,26 @@ a{
 /* hero */
 .hero{
     position: relative;
-    height: 816px;
+    min-height: 816px;
     background-color: #1C1C1C;
-    margin: 53px 0 0;
+    padding: 50px;
 }
 .hero__content img{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+.hero__content img:nth-of-type(1){
     position: absolute;
     top: 0;
     right: 0;
 }
-.hero__content img:nth-of-type(2){
-    padding: 50px 50px 261px 538px;
-}
 .sub__container{
-    width: 791px;
+    width: 100%;
+    max-width: 791px;
     height: 579px;
     background-color: #1A1A1A;
     border-radius: 20px 0px 80px 20px;
-    margin: 50px 758px 187px 50px;
     padding: 80px;
     position: absolute;
 }
@@ -240,7 +244,7 @@ a{
     width: 100%;
     height: 798px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
     margin-bottom: 30px;
 }
@@ -321,16 +325,16 @@ footer .container{
     color: #E4E4E7;
 }
 .btn-reset {
-    background: none;      /* xóa màu nền xám mặc định */
-    border: none;          /* xóa viền nổi mặc định */
-    padding: 0;            /* xóa khoảng cách đệm mặc định */
-    outline: none;         /* xóa viền xanh khi click (lưu ý: nên thay thế bằng hiệu ứng khác để hỗ trợ người dùng dùng bàn phím) */
-    cursor: pointer;       /* thêm icon bàn tay khi di chuột vào để người dùng biết là bấm được */
-    font: inherit;         /* kế thừa font chữ từ cha, tránh bị lỗi font mặc định của button */
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
 }
 .footer__btn > div {
     display: flex;        /* Kích hoạt flexbox cho từng nhóm (icon + text) */
-    align-items: center;  /* Căn giữa icon và chữ theo trục dọc */
+    align-items: center;
 }
 .footer__foot{
     display: flex;
@@ -366,11 +370,6 @@ footer .container{
     font-size: 18px;
     line-height: 150%;
     color: #B3B3B3;
-}
-/* Kiểu dáng cho dấu ngăn cách */
-.divider {
-    color: #505050;
-    font-weight: 300;
 }
 .line{
     max-width: 1596px;
