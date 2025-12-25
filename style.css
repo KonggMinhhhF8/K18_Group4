@@ -37,6 +37,8 @@ body{
 .navbar ul{
     display: flex;
     gap: 26px;
+    position: relative;
+    right: 205px;
 }
 li{
     list-style: none;
@@ -47,6 +49,9 @@ li{
 a{
     text-decoration: none;
     color: #fff;
+}
+.action{
+    display: flex;
 }
 .action__btn{
     padding: 10px 20px;
@@ -302,6 +307,10 @@ footer .container{
     gap: 50px;
     margin-bottom: 50px;
 }
+.footer__heading .navbar{
+    position: relative;
+    left: 110px;
+}
 .footer__foot{
     height: 84px;
     background: #1A1A1A;
@@ -377,4 +386,25 @@ footer .container{
     height: 0px;
     border-top: 1px solid #262626;
     margin-bottom: 50px;
+}
+
+
+/* "Hide" checkbox -- moves it off screen*/
+#menu-btn {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+}
+
+/* Hide hamburger for bigger screens */
+.menu-icon {
+    visibility: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 250px;
+    margin-right: 2rem;
 }

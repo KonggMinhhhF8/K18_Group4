@@ -1,14 +1,290 @@
-/* pc */
-@media screen and (min-width: 992px) {
+/* --- Tablet & Màn hình nhỏ hơn 1200px --- */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 50px; /* Giảm padding container */
+        min-width: 100%;
+    }
 
+    /* Header */
+    .menu-btn {
+        display: none;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        padding: 30px 20px 30px 0;
+        position: relative;
+        user-select: none;
+        visibility: visible;
+    }
+
+    .navicon {
+        background: #CAFF33;
+        display: block;
+        height: 2px;
+        width: 18px;
+        position: relative;
+        /*border: 1px solid #CAFF33;*/
+    }
+
+    .navicon:before {
+        top: 5px;
+    }
+
+    .navicon:after {
+        top: -5px;
+    }
+
+    .navicon:before,
+    .navicon:after {
+        background: #CAFF33;
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        transition: all 0.2s ease-out;
+    }
+
+    .navbar {
+        max-height: 0;
+        transition: max-height 0.2s ease-out;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__body navbar  a {
+        padding: 20px 20px;
+        border-right: 1px solid #f4f4f4;
+        background-color: #eee;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-btn:checked ~ .menu {
+        max-height: 240px;
+    }
+
+    .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+    }
+
+    .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+
+    .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+
+    .menu-btn:checked ~ .menu-icon .navicon:before,
+    .menu-btn:checked ~ .menu-icon .navicon:after {
+        top: 0;
+    }
+
+    /* Hero Section */
+    .sub__container {
+        position: relative; /* Bỏ absolute để không bị đè */
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .hero {
+        padding: 30px;
+        height: auto;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero__content img {
+        position: static; /* Cho ảnh chảy theo dòng */
+        display: none; /* Tạm ẩn ảnh trang trí nền gây rối trên màn nhỏ */
+    }
+
+    /* Các phần Mission/Vision */
+    .container__sub,
+    .container__sub01,
+    .container__sub02 {
+        height: auto; /* Bỏ chiều cao cố định */
+        flex-direction: column; /* Xếp dọc */
+    }
+
+    .container__sub01--text,
+    .container__sub02--text {
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .container__sub02 img:first-child,
+    .container__sub02 {
+        position: static; /* Bỏ absolute */
+    }
+
+    .container__sub01 img:first-child,
+    .container__sub02 img:first-child {
+        margin: 0;
+        position: static;
+    }
 }
 
-/* tablet & mobile */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+/* --- Mobile & Tablet dọc (Dưới 992px) --- */
+@media (max-width: 992px) {
+    .hero {
+        padding: 20px 0; /* Giảm padding */
+        min-height: auto;
+        height: auto;
+        background: transparent; /* Để nền body lo ra nếu cần */
+    }
 
+    .hero__content {
+        display: flex;
+        flex-direction: column; /* Xếp dọc: Ảnh trên, Chữ dưới */
+        align-items: center;
+        position: relative;
+    }
+
+    /* Xử lý ảnh Hero (Nhóm người) */
+    .hero__content img[alt="hero-img"] {
+        position: static; /* Bỏ absolute để ảnh chiếm chỗ thật */
+        width: 100%;
+        max-width: 100%; /* Giới hạn chiều rộng */
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0; /* Bo góc trên giống thiết kế */
+        margin-bottom: -20px; /* Kéo khung chữm lên đè nhẹ vào ảnh 1 chút cho đẹp */
+        z-index: 1;
+        display: block !important; /* Bắt buộc hiện ảnh này */
+    }
+
+    /* Ẩn ảnh trang trí (piece.svg) để đỡ rối mắt trên mobile */
+    .hero__content img[alt="piece"] {
+        display: none;
+    }
+
+    /* Khung chứa chữ (Welcome...) */
+    .sub__container {
+        position: static; /* Bỏ absolute */
+        width: 100%;
+        max-width: 100%;
+        height: auto; /* Chiều cao tự động theo nội dung */
+        border-radius: 20px; /* Bo tròn đều */
+        padding: 40px 20px;
+        text-align: center; /* Canh giữa nội dung như ảnh mẫu */
+        z-index: 2;
+        margin-top: 0;
+        background-color: #1A1A1A; /* Đảm bảo màu nền tách biệt */
+    }
+
+    /* Typography Hero Mobile */
+    .sub__container__top h1 {
+        font-size: 36px; /* Giảm size chữ tiêu đề */
+    }
+    .sub__container__top p {
+        font-size: 16px;
+    }
+    .sub__container > p:last-child {
+        font-size: 14px;
+        text-align: center; /* Canh giữa đoạn mô tả */
+    }
+
+    /* Press/Cards */
+    .container__press,
+    .press01,
+    .press02 {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%; /* Card chiếm full chiều rộng */
+    }
+
+    .container__text {
+        padding-right: 0; /* Bỏ khoảng trống bên phải */
+        height: auto;
+        margin-bottom: 40px;
+    }
 }
 
-/* mobile */
-@media screen and (max-width: 767px) {
+/* --- Mobile nhỏ (Dưới 576px) --- */
+@media (max-width: 576px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .container {
+        padding: 0 16px;
+    }
 
+    /* Header */
+    .header__body {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .navbar__list {
+        display: none; /* Trên mobile thường sẽ làm menu hamburger, tạm thời ẩn list dài */
+    }
+    .header__body > .navbar, .action {
+        display: none;
+    }
+
+    /* Typography: Giảm size chữ */
+
+    .sub__container__top h1 {
+        font-size: 32px;
+    }
+
+    .container__text h2,
+    .container02 h2 {
+        font-size: 32px;
+    }
+
+    .container__sub01--text h3,
+    .container__sub02--text h3 {
+        font-size: 24px;
+    }
+
+    /* Card adjustments */
+
+    .card img {
+        padding: 20px;
+    }
+
+    .card__content--info {
+        flex-direction: column; /* Ngày tháng xếp dọc */
+        font-size: 14px;
+    }
+
+    /* Footer */
+
+    .footer__heading {
+        gap: 30px;
+    }
+
+    .footer__foot {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .footer__btn {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social {
+        padding: 12px;
+    }
 }
