@@ -103,7 +103,7 @@
 
     .job-openings__text {
         gap: 10px;
-        padding-right: 7.5rem;
+        padding-right: 0;
     }
 
     .job-openings__content {
