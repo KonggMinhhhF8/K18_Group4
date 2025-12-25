@@ -103,9 +103,9 @@
     color: #CAFF33;
 }
 
-input[name="testimonial-slide"] {
-    display: none;
-}
+/*input[name="testimonial-slide"] {*/
+/*    display: none;*/
+/*}*/
 
 .home__testimonials__anime {
     width: 100%;
