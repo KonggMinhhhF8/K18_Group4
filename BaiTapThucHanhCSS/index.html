@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Demo Layout 10</title>
+    <title>Demo HomePage Group4</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="static/css/home_footers.css">
 </head>
 <body>
-
+    <!--start header-->
     <input type="checkbox" id="toggle-menu" hidden>
     <header class="home__header">
         <div  class="home__header__bar__fixed">
@@ -54,6 +54,7 @@
     <div class="overlay"></div>
     <!--end header-->
 
+    <!--start banner-->
     <div class="home__hero container">
         <div class="home__hero__bar">
             <div class="home__hero_bar__tag">
@@ -68,7 +69,6 @@
                 <a href="">Open Account</a>
             </div>
         </div>
-
         <div class="home__hero__body">
             <div class="home__hero__main">
                 <div class="home__hero__group">
@@ -128,30 +128,36 @@
                     <div class="home__hero__money">
                         <h4>Money Exchange</h4>
                         <div class="home__hero__national">
-                            <div class="home__hero__national__card">
-                                <div class="home__hero__national__items">
-                                    <div class="home__hero__national__header">
-                                        <div class="home__hero__national__header--icon">
-                                            <img src="static/icons/heros/money-irn-icon.svg" alt="money-irn-icon">
+                            <table class="home__hero__national__table">
+                                <tr>
+                                    <td>
+                                        <div class="home__hero__national__colum">
+                                            <div class="home__hero__national__colum__header">
+                                                <div class="home__hero__national__colum__header--icon">
+                                                    <img src="static/icons/heros/money-irn-icon.svg" alt="money-irn-icon">
+                                                </div>
+                                                <span>INR</span>
+                                            </div>
+                                            <div class="home__hero__national__colum__detail">Indian Rupees</div>
                                         </div>
-                                        <span>INR</span>
-                                    </div>
-                                    <div class="home__hero__national__nav">Indian Rupees</div>
-                                </div>
-                                <div class="home__hero__national__money">5,0000</div>
-                            </div>
-                            <div class="home__hero__national__card">
-                                <div class="home__hero__national__items">
-                                    <div class="home__hero__national__header">
-                                        <div class="home__hero__national__header--icon">
-                                            <img src="static/icons/heros/money-usd-icon.svg" alt="money-uds-icon">
+                                    </td>
+                                    <td>
+                                        <div class="home__hero__national__colum">
+                                            <div class="home__hero__national__colum__header">
+                                                <div class="home__hero__national__colum__header--icon">
+                                                    <img src="static/icons/heros/money-usd-icon.svg" alt="money-irn-icon">
+                                                </div>
+                                                <span>USA</span>
+                                            </div>
+                                            <div class="home__hero__national__colum__detail">United States Dollar</div>
                                         </div>
-                                        <span>USD</span>
-                                    </div>
-                                    <div class="home__hero__national__nav">United States Dollar</div>
-                                </div>
-                                <div class="home__hero__national__money">12.00</div>
-                            </div>
+                                    </td>
+                                </tr>
+                                <tr class="home__hero__national__money__row">
+                                    <td>5,0000</td>
+                                    <td>12.00</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                     <div class="home__hero__btn">
@@ -169,9 +175,21 @@
                                         <img src="static/icons/heros/box22-1-icon.svg" alt="box22-1">
                                     </a>
                                 </div>
-                                <div class="home__hero__active__box22"><a href=""><img src="static/icons/heros/box22-2-icon.svg" alt="box22-2"></a></div>
-                                <div class="home__hero__active__box22"><a href=""><img src="static/icons/heros/box22-3-icon.svg" alt="box22-3"></a></div>
-                                <div class="home__hero__active__box22"><a href=""><img src="static/icons/heros/box22-4-icon.svg" alt="box22-4"></a></div>
+                                <div class="home__hero__active__box22">
+                                    <a href="">
+                                        <img src="static/icons/heros/box22-2-icon.svg" alt="box22-2">
+                                    </a>
+                                </div>
+                                <div class="home__hero__active__box22">
+                                    <a href="">
+                                        <img src="static/icons/heros/box22-3-icon.svg" alt="box22-3">
+                                    </a>
+                                </div>
+                                <div class="home__hero__active__box22">
+                                    <a href="">
+                                        <img src="static/icons/heros/box22-4-icon.svg" alt="box22-4">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -181,6 +199,7 @@
     </div>
     <!--end banner-->
 
+    <!--start products-->
     <div class="home__products container">
         <div class="home__products__heading">
             <h2>Our <span>Products</span></h2>
@@ -228,6 +247,7 @@
     </div>
     <!--end products-->
 
+    <!--start container-->
     <div class="home__cases container">
         <div class="home__cases__heading">
             <h2>Use Cases</h2>
@@ -392,6 +412,7 @@
     </div>
     <!--end container-->
 
+    <!--start features-->
     <div class="home__features container">
         <div class="home__features__heading">
             <h2>Our <span>Features</span></h2>
@@ -459,6 +480,7 @@
     </div>
     <!--end features-->
 
+    <!--start faq-->
     <div class="home__faq container">
         <div class="home__faq__heading">
             <h2><span>Frequently</span> Asked Questions</h2>
@@ -508,6 +530,7 @@
     </div>
     <!--end faq-->
 
+    <!--start testimonials-->
     <div class="home__testimonials container">
         <div class="home__testimonials__heading">
             <h2>Our <span>Testimonials</span></h2>
@@ -621,6 +644,7 @@
     <!--end testimonials-->
 </body>
 <footer>
+    <!--start footer-->
     <div class="home__footer container">
         <div class="home__footer__main">
             <div class="home__footer__header">
@@ -688,5 +712,6 @@
             </div>
         </div>
     </div>
+    <!--end footer-->
 </footer>
 </html>

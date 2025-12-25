@@ -217,43 +217,60 @@ h4 {
     margin-bottom: 25px;
 }
 
-.home__hero__national {
-    border-radius: 10px;
+
+/*2025/12/24 nguyen add start*/
+.home__hero__national__table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
     border: 1px solid #262626;
-    display: flex;
-    justify-content: space-between;
+    border-radius: 10px;
+    background: #1C1C1C;
 }
 
-.home__hero__national__card {
+.home__hero__national__table td {
     width: 50%;
-}
-
-.home__hero__national__header {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 10px;
-    padding-bottom: 8px;
-}
-
-.home__hero__national__items {
     padding: 18px;
+    vertical-align: top;
 }
 
-.home__hero__national__money {
-    padding-left: 18px ;
-    padding-top: 26px ;
-    padding-bottom: 26px ;
+.home__hero__national__table td + td {
+    border-left: 1px solid #262626;
+}
+.home__hero__national__table tr + tr td {
     border-top: 1px solid #262626;
 }
 
-.home__hero__national__card:first-child .home__hero__national__items {
-    border-right: 1px solid #262626;
+.home__hero__national__colum {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.home__hero__national__card:first-child .home__hero__national__money {
-    border-right: 1px solid #262626;
+.home__hero__national__colum__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
+
+.home__hero__national__money__row td {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.home__hero__national__colum__header {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.home__hero__national__colum__detail {
+    font-size: 14px;
+    color: #E4E4E7;
+    font-weight: 300;
+}
+/*2025/12/24 nguyen end start*/
 
 .home__hero__btn {
     margin-top: 25px;
@@ -380,6 +397,16 @@ h4 {
     , .home__hero__national__money {
         font-size: 16px;
     }
+
+    .home__hero__national__colum__header {
+        font-size: 14px;
+    }
+
+    .home__hero__national__money__row td {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
 }
 
 @media screen and (max-width: 768px) {

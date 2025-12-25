@@ -210,10 +210,7 @@ input[name="testimonial-slide"] {
     .container {
         margin-left: 16px;
         margin-right: 16px;
-    }
-
-    .home__testimonials {
-        margin: 60px auto 0 auto;
+        margin-top: 60px
     }
 
     .home__testimonials__heading {
