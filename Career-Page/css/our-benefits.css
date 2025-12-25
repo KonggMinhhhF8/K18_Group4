@@ -27,11 +27,11 @@
     gap: 50px;
 }
 
-.our-benefits__card__top__left, .our-benefits__card__bottom__right {
+.our-benefits__card__top__left, .our-benefits__card__bottom__right, .our-benefits__card__top__right, .our-benefits__card__bottom__left {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    max-width: 748px;
+    width: 100%;
     padding: 3.125rem;
     border-radius: 50px 20px 50px 20px;
     border: 1px solid transparent;
@@ -63,40 +63,16 @@
 }
 
 .dash-width {
-    width: 1596px;
+    width: 100%;
     height: 1px;
     background-image: linear-gradient(to right, #262626 50%, transparent 50%);
     background-size: 20px 100%;
-
     opacity: 1;
     border: none;
 }
 
 .our-benefits__card__top__right, .our-benefits__card__bottom__left {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    max-width: 748px;
-    padding: 3.125rem;
     border-radius: 20px 50px 20px 50px;
-    border: 1px solid transparent;
-    background: linear-gradient(
-            267.5deg,
-            #1C1C1C 40.67%,
-            rgba(28, 28, 28, 0) 99.81%
-    ) padding-box,
-    linear-gradient(
-            106.06deg,
-            rgba(202, 255, 51, 0.05) -29.45%,
-            rgba(202, 255, 51, 0) 27.86%
-    ) padding-box,
-    linear-gradient(
-            280.49deg,
-            rgba(202, 255, 51, 0.1) 0%,
-            rgba(38, 38, 38, 0) 17.02%,
-            rgba(38, 38, 38, 0) 68.88%,
-            rgba(38, 38, 38, 0.1) 100%
-    ) border-box;
 }
 
 .our-benefits__card__text {
@@ -199,7 +175,7 @@
         gap: 14px;
     }
 
-    .dash-width {
+    .dash-width, .dash {
         width: 100%;
         height: 1px;
         background-image: linear-gradient(to right, #262626 50%, transparent 50%);
@@ -258,6 +234,7 @@
     }
 
     .our-benefits__card__top__left, .our-benefits__card__bottom__right, .our-benefits__card__top__right, .our-benefits__card__bottom__left {
+        width: 100%;
         border-radius: 40px 40px 14px 14px;
         padding: 1.5rem;
         gap: 20px;
