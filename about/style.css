@@ -392,14 +392,12 @@ footer .container{
     margin-bottom: 50px;
 }
 
-/* "Hide" checkbox -- moves it off screen*/
+/* Ẩn checkbox */
 #menu-btn {
     position: absolute;
     top: -100%;
     left: -100%;
 }
-
-/* Hide hamburger for bigger screens */
 .menu-icon {
     visibility: hidden;
 }
@@ -407,5 +405,4 @@ footer .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*margin-right: 2rem;*/
 }
