@@ -1,7 +1,7 @@
 /* --- Tablet & Màn hình nhỏ hơn 1200px --- */
 @media (max-width: 1200px) {
     .container {
-        padding: 0 50px; /* Giảm padding container */
+        padding: 0 50px;
         min-width: 100%;
     }
     /* Header */
@@ -52,7 +52,7 @@
         display: flex;
         flex-direction: column;
     }
-    .header__body navbar  a {
+    .header navbar  a {
         padding: 20px 20px;
         border-right: 1px solid #f4f4f4;
         background-color: #eee;
@@ -76,27 +76,24 @@
         top: 0;
     }
     /* Hero Section */
+    .hero__content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .sub__container {
-        position: relative; /* Bỏ absolute để không bị đè */
+        position: relative;
         max-width: 100%;
         height: auto;
         border-radius: 20px;
     }
-    .hero {
-        padding: 30px;
-        height: auto;
-        min-height: auto;
-        display: flex;
-        flex-direction: column;
-    }
     .hero__content img {
-        position: static; /* Cho ảnh chảy theo dòng */
-        display: none; /* Tạm ẩn ảnh trang trí nền gây rối trên màn nhỏ */
+        position: static;
     }
     /* Các phần Mission/Vision */
     .container__sub,
     .container__sub01,
     .container__sub02 {
+        text-align: center;
         height: auto; /* Bỏ chiều cao cố định */
         flex-direction: column; /* Xếp dọc */
     }
@@ -104,7 +101,6 @@
     .container__sub02--text {
         width: 100%;
         height: auto;
-        padding: 30px 0;
     }
 
     .cotainer__sub02 img:first-child,
@@ -119,46 +115,30 @@
 }
 /* --- Mobile & Tablet dọc (Dưới 992px) --- */
 @media (max-width: 992px) {
-    .hero {
-        padding: 20px 0; /* Giảm padding */
-        min-height: auto;
+    .hero__content img:first-of-type {
+        position: static;
+        max-width: 100%;
         height: auto;
-        background: transparent; /* Để nền body lo ra nếu cần */
-    }
-    .hero__content {
-        display: flex;
-        flex-direction: column; /* Xếp dọc: Ảnh trên, Chữ dưới */
-        align-items: center;
-        position: relative;
-    }
-    /* Xử lý ảnh Hero (Nhóm người) */
-    .hero__content img[alt="hero-img"] {
-        position: static; /* Bỏ absolute để ảnh chiếm chỗ thật */
-        width: 100%;
-        max-width: 100%; /* Giới hạn chiều rộng */
-        height: auto;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Bo góc trên giống thiết kế */
-        margin-bottom: -20px; /* Kéo khung chữm lên đè nhẹ vào ảnh 1 chút cho đẹp */
-        z-index: 1;
+        border-radius: 16px;
         display: block !important; /* Bắt buộc hiện ảnh này */
     }
-    /* Ẩn ảnh trang trí (piece.svg) để đỡ rối mắt trên mobile */
-    .hero__content img[alt="piece"] {
-        display: none;
+    .hero__content img:last-of-type {
+        width: 199px;
+        height: 189px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px;
     }
     /* Khung chứa chữ (Welcome...) */
     .sub__container {
-        position: static; /* Bỏ absolute */
+        position: relative;
+        top: -55px;
         width: 100%;
         max-width: 100%;
-        height: auto; /* Chiều cao tự động theo nội dung */
-        border-radius: 20px; /* Bo tròn đều */
-        padding: 40px 20px;
-        text-align: center; /* Canh giữa nội dung như ảnh mẫu */
-        z-index: 2;
-        margin-top: 0;
-        background-color: #1A1A1A; /* Đảm bảo màu nền tách biệt */
+        border-radius: 20px;
+        gap: 14px;
+        text-align: center;
+        background-color: #1A1A1A;
     }
     /* Typography Hero Mobile */
     .sub__container__top h1 {
@@ -171,6 +151,38 @@
         font-size: 14px;
         text-align: center; /* Canh giữa đoạn mô tả */
     }
+    /* Container__sub */
+    .container__text {
+        padding-right: 0; /* Bỏ khoảng trống bên phải */
+        height: auto;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .container__text h2{
+        font-size: 28px;
+    }
+    .container__text p{
+        font-size: 14px;
+    }
+    .container__sub01--text {
+        padding-top: 30px;
+        border-top: 1px solid #CAFF33;
+        gap: 10px;
+        padding-left: 0;
+    }
+    .container__sub02--text{
+        padding-top: 30px;
+        border-top: 1px solid #CAFF33;
+        gap: 10px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    ..container02 {
+        margin-top: 80px;
+    }
+    .container__sub01--img::after, .container__sub02--img::after{
+        display: none;
+    }
     /* Press/Cards */
     .container__press,
     .press01,
@@ -181,53 +193,65 @@
     .card {
         width: 100%; /* Card chiếm full chiều rộng */
     }
-    .container__text {
-        padding-right: 0; /* Bỏ khoảng trống bên phải */
-        height: auto;
-        margin-bottom: 40px;
-    }
+
 }
 /* --- Mobile nhỏ (Dưới 576px) --- */
 @media (max-width: 576px) {
+    .container {
+        padding: 0 16px;
+    }
     img {
         max-width: 100%;
         height: auto;
     }
-    .container {
-        padding: 0 16px;
-    }
-    /* Header */
-    .header__body {
-        margin-top: 20px;
+    /* Hero - Typography: Giảm size chữ */
+    .header {
+        margin-top: 40px;
         margin-bottom: 30px;
     }
     .header__body > .navbar, .action {
         display: none;
     }
-    /* Typography: Giảm size chữ */
+    .hero__content {
+        border-radius: 20px;
+        padding: 14px;
+    }
+    /* Sub */
+    .sub__container p {
+        font-size: 14px;
+    }
     .sub__container__top h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
     .container__text h2,
     .container02 h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
     .container__sub01--text h3,
     .container__sub02--text h3 {
         font-size: 24px;
+    }
+    /*.container__sub01--text{*/
+    /*    width: 100%;*/
+    /*    height: auto;*/
+    /*    align-self: center;*/
+    /*    padding-top: 30px;*/
+    /*}*/
+    .container__sub02{
+        display: flex;
+        flex-direction: column-reverse;
     }
     /* Card adjustments */
     .card img {
         padding: 20px;
     }
     .card__content--info {
-        flex-direction: column; /* Ngày tháng xếp dọc */
         font-size: 14px;
     }
-    /* Footer */
-    .footer__heading a {
-        visibility: visible;
+    .card__content {
+        padding: 20px;
     }
+    /* Footer */
     .footer__heading {
         gap: 30px;
     }

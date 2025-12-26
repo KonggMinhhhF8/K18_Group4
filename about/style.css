@@ -16,10 +16,9 @@ body{
 }
 
 /* header */
-.header__body{
+.header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px 34px;
     margin-top: 50px;
     border: 1px solid #262626;
@@ -31,65 +30,62 @@ body{
     display:flex;
     align-items: center;
 }
-.header__logo--name{
+.logo{
+    width: 155px;
+    height: 40px;
+}
+a{
+    font-size: 18px;
+    text-decoration: none;
     color: #fff;
 }
 .navbar ul{
     display: flex;
     gap: 26px;
-    position: relative;
-    right: 205px;
+}
+.navbar__list li:hover{
+    background-color:#262626;
+}
+.navbar__list li:nth-of-type(3){
+    background-color:#262626;
 }
 li{
     list-style: none;
     border: 1px solid transparent;
     border-radius: 999px;
-    padding: 10px 20px;
-}
-a{
-    text-decoration: none;
-    color: #fff;
+    padding: 12px 20px;
 }
 .action{
+    gap: 30px;
     display: flex;
+    align-items: center;
 }
-.action__btn{
-    padding: 10px 20px;
-}
-.action__btn:hover{
+.action__btn:nth-of-type(2){
+    padding: 14px 30px;
     background:#CAFF33;
     color: #1C1C1C;
     border-radius: 82px;
 }
-.navbar__list li:hover{
-    background-color:#333333;
-}
 
 /* hero */
-.hero{
-    position: relative;
+.hero__content{
     min-height: 816px;
     background-color: #1C1C1C;
     padding: 50px;
-}
-.hero__content img{
-    position: absolute;
-    top: 50px;
-    right: 50px;
-}
-.hero__content img:nth-of-type(1){
-    position: absolute;
-    top: 0;
-    right: 0;
+    display: flex;
+    position: relative;
 }
 .sub__container{
     width: 100%;
     max-width: 791px;
-    height: 579px;
+    max-height: 579px;
     background-color: #1A1A1A;
     border-radius: 20px 0px 80px 20px;
     padding: 80px;
-    position: absolute;
+    gap: 23px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
 }
 .sub__container__top p{
     font-size: 20px;
@@ -106,13 +102,25 @@ a{
     font-weight:300;
     font-size: 18px;
     line-height: 150%;
-    margin-top: 23px;
     color: #B3B3B3;
+}
+.hero__content img:nth-of-type(1){
+    position: absolute;
+    right: 30px;
+    max-width: 100%;
+    z-index: 2;
+}
+.hero__content img:nth-of-type(2){
+    position: absolute;
+    max-width: 100%;
+    z-index: 1;
+    top: 0;
+    right: 0;
 }
 
 /* main */
 .container01{
-    margin-top: 150px;
+    margin-top: 80px;
 }
 .container__text{
     width: 100%;
@@ -143,32 +151,29 @@ a{
     position: relative;
     display: flex;
 }
-.container__sub01 img:first-child{
-    margin: 0 31px;
-}
 .container__sub02 img:first-child{
     margin: 0 31px;
     position: absolute;
     right: 0;
 }
 .container__sub01 img:nth-child(2), .container__sub02 img:nth-child(2){
-    width: 664px;
-    height: 621px;
+    width: 100%;
+    height: auto;
     opacity: 0.5;
     position: absolute;
     left: 0;
-    border: 1px solid transparent;
-    border-radius: 50px 50px 20px 20px;
+    border: 1px solid #262626;
+    border-radius: 50px;
 }
 .container__sub01 img:last-of-type, .container__sub02 img:last-of-type{
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 0 60px;
+    padding: 20px 20px 0;
 }
 .container__sub01--text{
-    width: 932px;
-    height: 206px;
+    max-width: 932px;
+    height: auto;
     align-self: center;
     padding: 0 0 0 50px;
 }
@@ -207,10 +212,11 @@ a{
     font-size: 18px;
     line-height: 150%;
     color: #B3B3B3;
+    margin-bottom: 30px;
 }
 .container__sub02--text{
-    width: 932px;
-    height: 206px;
+    max-width: 932px;
+    height: auto;
     align-self: center;
     padding: 0 50px 0 0;
 }
@@ -300,6 +306,7 @@ footer .container{
     background: #1C1C1C;
     padding: 100px 162px 50px;
 }
+
 .footer__heading{
     display: flex;
     align-items: center;
@@ -307,10 +314,7 @@ footer .container{
     gap: 50px;
     margin-bottom: 50px;
 }
-.footer__heading .navbar{
-    position: relative;
-    left: 110px;
-}
+
 .footer__foot{
     height: 84px;
     background: #1A1A1A;
@@ -388,7 +392,6 @@ footer .container{
     margin-bottom: 50px;
 }
 
-
 /* "Hide" checkbox -- moves it off screen*/
 #menu-btn {
     position: absolute;
@@ -400,11 +403,9 @@ footer .container{
 .menu-icon {
     visibility: hidden;
 }
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 250px;
-    margin-right: 2rem;
+    /*margin-right: 2rem;*/
 }
