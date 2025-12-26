@@ -177,7 +177,7 @@
         padding-left: 0;
         padding-right: 0;
     }
-    ..container02 {
+    .container02 {
         margin-top: 80px;
     }
     .container__sub01--img::after, .container__sub02--img::after{
