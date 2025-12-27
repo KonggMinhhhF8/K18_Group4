@@ -82,6 +82,10 @@
         margin: 50px 16px;
     }
 
+    .home__header__nav ul {
+        gap: 0.5rem;
+    }
+
     .home__header__nav ul li a {
         font-size: 14px;
         padding: 0.5rem;
