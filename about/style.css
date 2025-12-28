@@ -55,9 +55,9 @@ a{
 .navbar__list li:hover{
     background-color:#262626;
 }
-.navbar__list li:nth-of-type(3){
-    background-color:#262626;
-}
+/*.navbar__list li:nth-of-type(3){*/
+/*    background-color:#262626;*/
+/*}*/
 li{
     list-style: none;
     border: 1px solid transparent;
