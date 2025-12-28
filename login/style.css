@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1A1A1A;
+    font-family: "Lexend", sans-serif;
+    color: white;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.highlight {
+    color: #caff33;
+}
+
+.login-section {
+    padding: 60px 0;
+}
+
+.login-card {
+    background-color: #1C1C1C;
+    padding: 50px 80px;
+    border-radius: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #262626;
+}
+
+.login-header {
+    margin-bottom: 30px;
+}
+
+.login-header h1 {
+    color: #caff33;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.login-header p {
+    color: #b3b3b3;
+    font-size: 1rem;
+}
+
+.input-row {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.field {
+    flex: 1;
+    position: relative;
+}
+
+.field input {
+    width: 100%;
+    background: #262626;
+    border: 1px solid #333;
+    padding: 18px 25px;
+    border-radius: 50px;
+    color: white;
+    outline: none;
+    font-size: 1rem;
+}
+
+.field input:focus {
+    border-color: #caff33;
+}
+
+.password-field {
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    right: 25px;
+    top: 30%;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.forgot-link {
+    margin-bottom: 30px;
+}
+
+.forgot-link a {
+    color: #FFFFFF;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    width: 100%;
+    max-width: 500px;
+    padding: 16px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background: #caff33;
+    color: black;
+}
+
+.btn-secondary {
+    background: #262626;
+    color: white;
+    border: 1px solid #333;
+}
+
+.divider {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    color: #B3B3B3;
+    font-size: 0.95rem;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #333;
+}
+
+.divider span {
+    padding: 0 25px;
+}
+
+.social-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.social-item {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: linear-gradient(
+            180deg,
+            rgba(202, 255, 51, 0.05) 0%,
+            rgba(202, 255, 51, 0) 100%
+    );
+}
+
+.social-item img {
+    width: 28px;
+}
+
+.social-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+.testimonials-section {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 100px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 80px;
+}
+
+.title-area h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.title-area p {
+    color: #999999;
+    font-size: 14px;
+    max-width: 600px;
+}
+
+.toggle-box {
+    background-color: #111111;
+    border: 1px solid #262626;
+    padding: 10px;
+    border-radius: 100px;
+    display: flex;
+}
+
+.t-btn {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.t-btn.active {
+    background-color: #caff33;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.testimonials-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.testimonials-list {
+    display: flex;
+    gap: 50px;
+    flex: 1;
+}
+
+.t-card {
+    flex: 1;
+    text-align: center;
+    border-top: 1px solid #262626;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.quote-wrapper {
+    margin-bottom: 30px;
+}
+
+.quote-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1a1a1a;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.t-card p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.t-card:first-child .testimonial-body {
+    opacity: 0.4;
+    mask-image: linear-gradient(to right, transparent 0%, black 40%);
+}
+
+.t-card:last-child .testimonial-body {
+    opacity: 0.4;
+    mask-image: linear-gradient(to left, transparent 0%, black 40%);
+}
+
+.t-card:nth-child(2) .testimonial-body {
+    opacity: 1;
+    mask-image: none;
+    -webkit-mask-image: none;
+}
+
+.t-card:first-child,
+.t-card:last-child {
+    transform: scale(0.95);
+}
+
+.author {
+    color: #caff33;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.arrow-btn {
+    background-color: #1a1a1a;
+    border: 1px solid #262626;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.arrow-btn img {
+    width: 18px;
+    height: 18px;
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+
+    .login-section {
+        padding: 40px 0;
+    }
+
+    .login-card {
+        padding: 40px 30px;
+        max-width: 100%;
+    }
+
+    .login-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .input-row {
+        gap: 15px;
+    }
+
+    .field input {
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        max-width: 50%;
+    }
+
+    .social-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .testimonials-section {
+        padding: 60px 0;
+    }
+
+    .section-header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .testimonials-container {
+        gap: 15px;
+    }
+
+    .testimonials-list {
+        gap: 20px;
+    }
+
+    .t-card {
+        padding-top: 40px;
+    }
+
+    .t-card p {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .t-card:first-child .testimonial-body,
+    .t-card:last-child .testimonial-body {
+        opacity: 0.6;
+    }
+
+    .quote-wrapper img {
+        width: 40px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+
+    .login-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .input-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .field input {
+        padding: 15px 20px;
+    }
+
+    .eye {
+        top: 25%;
+        right: 5%;
+    }
+
+    .form-actions {
+        width: 100%;
+    }
+
+    .btn {
+        max-width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .social-group {
+        gap: 12px;
+    }
+
+    .social-item {
+        width: 50px;
+        height: 50px;
+    }
+
+    @media (max-width: 768px) {
+        .testimonials-container {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .testimonials-list {
+            width: 100%;
+            flex: none;
+            flex-direction: column;
+            gap: 50px;
+            order: 1;
+        }
+
+        .arrow-btn {
+            order: 2;
+            width: 55px;
+            height: 55px;
+        }
+
+        .t-card:first-child,
+        .t-card:last-child {
+            display: none;
+        }
+
+        .t-card {
+            width: 100%;
+            padding: 50px 20px 30px;
+        }
+
+        .section-header-flex {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 25px;
+        }
+
+        .toggle-box {
+            width: 100%;
+        }
+
+        .t-btn {
+            flex: 1;
+            font-size: 12px;
+        }
+
+        .login-card {
+            padding: 30px 20px;
+        }
+
+        .input-row {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            max-width: 100%;
+        }
+    }
+}
