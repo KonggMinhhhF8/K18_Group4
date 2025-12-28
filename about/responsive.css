@@ -272,6 +272,7 @@
     .menu-btn:checked ~ .header__menu .navicon::before {
         transform: rotate(-45deg);
         top: 0;
+        width: 100%;
     }
     .menu-btn:checked ~ .header__menu .navicon::after {
         transform: rotate(45deg);
