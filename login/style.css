@@ -10,9 +10,8 @@ body {
 }
 
 .container {
-    max-width: 86%;
+    max-width: 1596px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .highlight {
@@ -25,7 +24,7 @@ body {
     padding: 50px 80px;
     border-radius: 20px;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 90%;
     text-align: center;
     border: 1px solid #262626;
 }
