@@ -126,9 +126,9 @@ body {
 .divider {
     margin: 20px 0;
     display: flex;
+    justify-content: center;
     align-items: center;
     color: #B3B3B3;
-    font-size: 0.95rem;
 }
 
 .divider::before,
@@ -137,6 +137,7 @@ body {
     flex: 1;
     height: 1px;
     background: #333;
+    max-width: 150px;
 }
 
 .divider span {
@@ -155,7 +156,7 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 1px solid #333;
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -315,7 +316,6 @@ body {
 
     .field input {
         padding: 20px;
-        font-size: 0.9rem;
     }
 
     .btn {
@@ -328,6 +328,15 @@ body {
 
     .title-area p {
         width: 100%;
+    }
+
+    .divider::before,
+    .divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #333;
+        max-width: 100px;
     }
 
     .section-header-flex {
@@ -399,7 +408,15 @@ body {
 
     .btn {
         max-width: 100%;
-        font-size: 0.9rem;
+    }
+
+    .divider::before,
+    .divider::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #333;
+        max-width: 150px;
     }
 
     .social-group {
