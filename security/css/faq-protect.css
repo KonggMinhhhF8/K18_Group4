@@ -243,6 +243,8 @@
 }
 .feature-card-flex {
     flex-direction: column;
+    padding: 0;
+    margin-bottom: 25px;
 }
 .faq-card-flex {
     flex-direction: column;
