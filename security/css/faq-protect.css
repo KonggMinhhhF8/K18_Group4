@@ -238,7 +238,9 @@
     gap: 20px;
     margin-left: 0;
 }
-
+.card-header {
+    font-size: 10px
+}
 .feature-card-flex {
     flex-direction: column;
 }
