@@ -199,7 +199,6 @@
         top: 0;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: #1A1A1A;
         padding: 0 15px;
         display: flex;
         gap: 12px;
