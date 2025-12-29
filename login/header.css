@@ -1,15 +1,13 @@
 .header {
-    width: 95%;
     max-width: 1596px;
-    height: 95px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1C1C1C;
     border: 1px solid #262626;
     border-radius: 100px;
-    margin: 20px auto 10px auto;
-    padding: 0 34px;
+    margin: 50px 2% 150px 2%;
+    padding: 20px 34px;
     box-sizing: border-box;
     position: sticky;
     top: 0;
@@ -46,13 +44,10 @@
     line-height: 150%;
     padding: 10px 15px;
 }
-
-.header-nav ul li a.nav-button-grey {
+.header-nav ul li a:hover {
     background-color: #262626;
-    border-radius: 999px;
-    padding: 12px 24px;
+    border-radius: 82px;
 }
-
 .header-button {
     display: flex;
     align-items: center;
@@ -83,47 +78,7 @@
     display: none;
 }
 
-@media screen and (max-width: 1650px) {
-    .header {
-        width: 94%;
-        max-width: 1400px;
-        height: 73px;
-        margin: 30px auto;
-        padding-left: 24px;
-        padding-right: 24px;
-    }
 
-    .header-nav ul {
-        gap: 26px;
-    }
-
-    .header-nav ul li a {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-
-    .header-nav ul li a.nav-button-grey {
-        padding: 10px 18px;
-    }
-
-    .header-button {
-        gap: 20px;
-    }
-
-    .sign-up {
-        font-size: 14px;
-    }
-
-    .login {
-        font-size: 14px;
-        padding: 12px 24px;
-    }
-
-    .header-logo img {
-        max-height: 30px;
-        width: auto;
-    }
-}
 
 .nav-input,
 .nav-mobile-btn,
@@ -133,11 +88,6 @@
 }
 
 @media screen and (max-width: 992px) {
-    .header {
-        height: 75px;
-        padding: 0 20px;
-        margin: 10px auto 5px auto;
-    }
 
     .header-logo {
         width: 130px;
@@ -156,26 +106,14 @@
         gap: 15px;
     }
 
-    .login {
+    .login,
+    .sign-up {
         padding: 10px 20px;
         font-size: 14px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .header {
-        width: auto;
-        height: auto;
-        margin: 21px 24px;
-        border-radius: 100px;
-        border: 1px solid #262626;
-        background-color: #1C1C1C;
-        padding: 12px 24px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-    }
 
     .header-button {
         display: none;
@@ -272,14 +210,6 @@
         border-bottom: 1px solid #262626;
         text-align: center;
         margin-bottom: 40px;
-    }
-
-    .header-nav ul li a.nav-button-grey {
-        background-color: transparent;
-        border-radius: 0;
-        padding: 18px 0;
-        width: 100%;
-        text-align: center;
     }
 
     .nav-input:checked ~ .header-nav {

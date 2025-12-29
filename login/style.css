@@ -7,13 +7,10 @@
 body {
     background-color: #1A1A1A;
     font-family: "Lexend", sans-serif;
-    color: white;
-    overflow-x: hidden;
-    line-height: 1.6;
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 86%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -22,16 +19,13 @@ body {
     color: #caff33;
 }
 
-.login-section {
-    padding: 60px 0;
-}
 
 .login-card {
     background-color: #1C1C1C;
     padding: 50px 80px;
     border-radius: 20px;
-    max-width: 1100px;
     margin: 0 auto;
+    max-width: 80%;
     text-align: center;
     border: 1px solid #262626;
 }
@@ -56,26 +50,25 @@ body {
     display: flex;
     gap: 25px;
     margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
 .field {
-    flex: 1;
+    width: 40%;
+    height: 100%;
     position: relative;
 }
 
 .field input {
     width: 100%;
-    background: #262626;
+    background: #1A1A1A;
     border: 1px solid #333;
     padding: 18px 25px;
     border-radius: 50px;
     color: white;
     outline: none;
     font-size: 1rem;
-}
-
-.field input:focus {
-    border-color: #caff33;
 }
 
 .password-field {
@@ -119,10 +112,6 @@ body {
     cursor: pointer;
 }
 
-.btn:active {
-    transform: scale(0.98);
-}
-
 .btn-primary {
     background: #caff33;
     color: black;
@@ -154,11 +143,12 @@ body {
     padding: 0 25px;
 }
 
+
 .social-group {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 70px;
+    margin-top: 40px;
 }
 
 .social-item {
@@ -170,36 +160,16 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    background: linear-gradient(
-            180deg,
-            rgba(202, 255, 51, 0.05) 0%,
-            rgba(202, 255, 51, 0) 100%
-    );
+    background: linear-gradient(180deg, rgba(202, 255, 51, 0.05) 0%, rgba(202, 255, 51, 0) 100%);
 }
 
-.social-item img {
-    width: 28px;
-}
-
-.social-icon {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    display: block;
-}
 
 .testimonials-section {
     background-color: #1a1a1a;
     color: #ffffff;
     padding: 100px 0;
-    font-family: 'Inter', sans-serif;
 }
 
-.container {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 
 .section-header-flex {
     display: flex;
@@ -217,18 +187,19 @@ body {
 .title-area p {
     color: #999999;
     font-size: 14px;
-    max-width: 600px;
+    width: 80%;
 }
 
 .toggle-box {
-    background-color: #111111;
+    background-color: #1C1C1C;
     border: 1px solid #262626;
-    padding: 10px;
+    padding: 20px;
     border-radius: 100px;
     display: flex;
 }
 
 .t-btn {
+    white-space: nowrap;
     background: transparent;
     border: none;
     color: #ffffff;
@@ -238,10 +209,10 @@ body {
     font-size: 14px;
 }
 
-.t-btn.active {
-    background-color: #caff33;
-    color: #1a1a1a;
-    font-weight: 500;
+.active {
+    background: #CAFF33;
+    color: #1C1C1C;
+    border-radius: 140px;
 }
 
 .testimonials-container {
@@ -292,24 +263,11 @@ body {
 }
 
 .t-card:first-child .testimonial-body {
-    opacity: 0.4;
-    mask-image: linear-gradient(to right, transparent 0%, black 40%);
+    background: linear-gradient(270deg, rgba(25, 25, 25, 0) 0%, #191919 105.84%);
 }
 
 .t-card:last-child .testimonial-body {
-    opacity: 0.4;
-    mask-image: linear-gradient(to left, transparent 0%, black 40%);
-}
-
-.t-card:nth-child(2) .testimonial-body {
-    opacity: 1;
-    mask-image: none;
-    -webkit-mask-image: none;
-}
-
-.t-card:first-child,
-.t-card:last-child {
-    transform: scale(0.95);
+    background: linear-gradient(270deg, #191919 10.8%, rgba(25, 25, 25, 0) 105.84%);
 }
 
 .author {
@@ -342,10 +300,6 @@ body {
         padding: 0 30px;
     }
 
-    .login-section {
-        padding: 40px 0;
-    }
-
     .login-card {
         padding: 40px 30px;
         max-width: 100%;
@@ -368,20 +322,20 @@ body {
         max-width: 50%;
     }
 
-    .social-icon {
-        width: 24px;
-        height: 24px;
-    }
-
     .testimonials-section {
         padding: 60px 0;
     }
 
+    .title-area p {
+        width: 100%;
+    }
+
     .section-header-flex {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
         margin-bottom: 50px;
+    }
+
+    .toggle-box {
+        padding: 10px;
     }
 
     .testimonials-container {
@@ -430,13 +384,17 @@ body {
         padding: 15px 20px;
     }
 
+    .field {
+        width: 100%;
+    }
     .eye {
         top: 25%;
-        right: 5%;
+        right: 2%;
     }
 
     .form-actions {
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .btn {
@@ -445,7 +403,7 @@ body {
     }
 
     .social-group {
-        gap: 12px;
+        gap: 20%;
     }
 
     .social-item {
@@ -453,64 +411,58 @@ body {
         height: 50px;
     }
 
-    @media (max-width: 768px) {
-        .testimonials-container {
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
 
-        .testimonials-list {
-            width: 100%;
-            flex: none;
-            flex-direction: column;
-            gap: 50px;
-            order: 1;
-        }
+    .testimonials-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
 
-        .arrow-btn {
-            order: 2;
-            width: 55px;
-            height: 55px;
-        }
+    .testimonials-list {
+        width: 100%;
+        flex: none;
+        flex-direction: column;
+        gap: 50px;
+        order: 1;
+    }
 
-        .t-card:first-child,
-        .t-card:last-child {
-            display: none;
-        }
+    .arrow-btn {
+        order: 2;
+        width: 55px;
+        height: 55px;
+    }
 
-        .t-card {
-            width: 100%;
-            padding: 50px 20px 30px;
-        }
+    .t-card:first-child,
+    .t-card:last-child {
+        display: none;
+    }
 
-        .section-header-flex {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 25px;
-        }
+    .t-card {
+        width: 100%;
+    }
 
-        .toggle-box {
-            width: 100%;
-        }
+    .section-header-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
 
-        .t-btn {
-            flex: 1;
-            font-size: 12px;
-        }
+    .toggle-box {
+        width: 80%;
+    }
 
-        .login-card {
-            padding: 30px 20px;
-        }
+    .t-btn {
+        flex: 1;
+        font-size: 12px;
+    }
 
-        .input-row {
-            flex-direction: column;
-            gap: 15px;
-        }
+    .input-row {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-        .btn {
-            max-width: 100%;
-        }
+    .btn {
+        max-width: 100%;
     }
 }
