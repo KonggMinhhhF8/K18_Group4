@@ -70,22 +70,6 @@
         width: 100%;
         text-align: center;
     }
-    /*.menu-btn:checked ~ .menu {*/
-    /*    max-height: 240px;*/
-    /*}*/
-    /*.menu-btn:checked ~ .menu-icon .navicon {*/
-    /*    background: transparent;*/
-    /*}*/
-    /*.menu-btn:checked ~ .menu-icon .navicon:before {*/
-    /*    transform: rotate(-45deg);*/
-    /*}*/
-    /*.menu-btn:checked ~ .menu-icon .navicon:after {*/
-    /*    transform: rotate(45deg);*/
-    /*}*/
-    /*.menu-btn:checked ~ .menu-icon .navicon:before,*/
-    /*.menu-btn:checked ~ .menu-icon .navicon:after {*/
-    /*    top: 0;*/
-    /*}*/
     /* Hero Section */
     .hero__content {
         display: flex;
@@ -127,9 +111,7 @@
 /* --- Mobile & Tablet dọc (Dưới 992px) --- */
 @media (max-width: 992px) {
     .header__menu{
-        /*display: inline-block;*/
         position: relative;
-        /*left: 100px;*/
     }
     .hero__content img:first-of-type {
         position: static;
@@ -148,7 +130,7 @@
     /* Khung chứa chữ (Welcome...) */
     .sub__container {
         position: relative;
-        top: -55px;
+        top: -39px;
         width: 100%;
         max-width: 100%;
         border-radius: 20px;
@@ -216,7 +198,8 @@
         width: 100%;
     }
 }
-/* --- Mobile nhỏ (Dưới 576px) --- */
+
+/* --- Mobile nhỏ (Dưới 768px) --- */
 @media (max-width: 768px) {
     .container {
         padding: 0 16px;
@@ -253,14 +236,8 @@
         background: #1A1A1A;
     }
     .menu-icon {
-        /*cursor: pointer;*/
         display: flex;
         justify-content: flex-end;
-        /*align-items: baseline;*/
-        /*padding: 30px 20px 30px;*/
-        /*position: relative;*/
-        /*user-select: none;*/
-        /*visibility: visible;*/
     }
     .menu-btn:checked ~ .navbar {
         display: block;
@@ -328,14 +305,27 @@
         font-size: 18px;
     }
     .card__content--date{
-        padding: 6px 12px;
+        padding: 4px 8px;
     }
     /* Footer */
     footer .container{
         padding: 50px 16px 30px;
     }
-    .footer__heading {
-        gap: -1px;
+    .footer__heading .navbar {
+        display: inline-block;
+        position: static;
+        background: transparent;
+        box-shadow: none;
+        width: auto;
+        margin-top: -30px;
+        margin-bottom: 20px;
+    }
+    .footer__heading .navbar__list {
+        display: flex;
+        flex-direction: row; /* Xếp dọc các link cho dễ ấn trên điện thoại */
+        gap: 0;              /* Khoảng cách giữa các link */
+        background: transparent;
+        padding: 0;
     }
     .footer__foot {
         flex-direction: column;
