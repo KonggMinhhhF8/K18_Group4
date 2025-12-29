@@ -86,6 +86,11 @@
 .nav-close-btn {
     display: none;
 }
+@media screen and (max-width: 1630px)   {
+    .header {
+        max-width: 97%;
+    }
+}
 
 @media screen and (max-width: 992px) {
     .header {
