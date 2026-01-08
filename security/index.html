@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/header.css?202512301642">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/faq-protect.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -19,7 +19,9 @@
 <header class="header">
 
     <div class="header-logo">
-        <img src="image/Logo.svg" alt="logo">
+        <a href="../home/index.html">
+            <img src="image/Logo.svg" alt="logo">
+        </a>
     </div>
 
     <input type="checkbox" id="nav-mobile-input" class="nav-input">
@@ -28,19 +30,29 @@
         <img src="icon/Vector%20(Stroke).svg" alt="menu" class="responsive-vector">
     </label>
 
+
     <div class="header-nav">
         <label for="nav-mobile-input" class="nav-overlay"></label>
-
         <div class="nav-content">
-            <label for="nav-mobile-input" class="nav-close-btn">
-                &#10005;
-            </label>
+
+            <div class="nav-content--mobile">
+                <div class="header-logo-mobile">
+                    <a href="../home/index.html">
+                        <img src="image/Logo.svg" alt="logo">
+                    </a>
+                </div>
+                <label for="nav-mobile-input" class="nav-close-btn">
+                    &#10005;
+                </label>
+            </div>
 
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="../home/index.html">Home</a></li>
+                <li><a href="../career/index.html">Careers</a></li>
+                <li><a href="../about/index.html">About</a></li>
                 <li><a href="#">Security</a></li>
+                <li class="header__active__mobile--signup"><a href="../sign-up/index.html">Sign Up</a></li>
+                <li class="header__active__mobile--login"><a href="../login/index.html">Login</a></li>
             </ul>
         </div>
     </div>
@@ -213,9 +225,9 @@
             </div>
             <nav class="footer-nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="../home/index.html">Home</a></li>
+                    <li><a href="../career/index.html">Careers</a></li>
+                    <li><a href="../about/index.html">About</a></li>
                     <li><a href="#">Security</a></li>
                 </ul>
             </nav>

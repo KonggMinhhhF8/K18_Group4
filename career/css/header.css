@@ -117,7 +117,7 @@ header {
     }
 }
 
-                                /*Mobile*/
+/*Mobile*/
 
 @media screen and (max-width: 767px) {
     .container {
@@ -206,4 +206,6 @@ header {
     #menu-toggle:checked ~ .menu-mobile__nav, #menu-toggle:checked ~ .overlay {
         display: flex;
     }
+
+
 }

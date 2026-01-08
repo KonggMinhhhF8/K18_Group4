@@ -144,10 +144,10 @@
     position: absolute;
     inset: 0;
     background: linear-gradient(to right,
-                        rgba(28, 28, 28, 1) 0%,
-                        transparent 50%,
-                        transparent 50%,
-                        rgba(28, 28, 28, 1) 100%);
+    rgba(28, 28, 28, 1) 0%,
+    transparent 50%,
+    transparent 50%,
+    rgba(28, 28, 28, 1) 100%);
     z-index: 10;
 }
 
@@ -318,7 +318,7 @@
     .home__testimonials__shadow-overlay {
         z-index: 100;
     }
-/*--*/
+    /*--*/
 
     .home__testimonials__footer {
         margin-top: 50px;
