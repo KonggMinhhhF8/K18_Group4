@@ -1,0 +1,133 @@
+.hero-section{
+    display: flex;
+    justify-content: end;
+    background: #1C1C1C;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+    padding: 5rem;
+    align-items: start;
+    margin-bottom: 15rem;
+    /*container-type: inline-size;*/
+}
+.hero-content {
+    max-width: 73.5rem;
+    width: 100%;
+    padding: 8rem;
+    border-radius: 2rem 0 8rem 2rem;
+    background: #1A1A1A;
+    z-index: 3;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
+.hero-content p{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+.hero-content p:last-child{
+    font-size: 1.8rem;
+    color: #B3B3B3;
+    line-height: 150%;
+    text-align: justify;
+}
+.hero-content h1{
+    font-size: 5.8rem;
+    font-weight: 500;
+    line-height: 130%;
+    margin-bottom: 2.3rem;
+}
+.hero-img01{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+.hero-img02{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+@media (max-width: 992px) {
+    .hero-section{
+        width: 100%;
+        padding: 4rem 4rem 8rem;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12rem;
+    }
+    .hero-content {
+        width: 100%;
+        max-width: 60%;
+        padding: 2rem;
+        border-radius: 2rem 0 6rem 2rem;
+        position: relative;
+        top: -0.1rem;
+        left: 0;
+        min-height: 30rem;
+    }
+    .hero-content p{
+        font-size: 1.8rem;
+    }
+    .hero-content h1 {
+        font-size: 3.8rem;
+    }
+    .hero-content p:last-child{
+        font-size: 1.6rem;
+    }
+    .hero-img01 {
+        max-width: 50%;
+        height: auto;
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+    }
+    .hero-img02 {
+        max-width: 33rem;
+        top: 0;
+        right: 0;
+    }
+}
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        padding: 1.4rem;
+        margin-bottom: 8rem;
+    }
+    .hero-img01 {
+        position: relative;
+        max-width: 97%;
+        top: 0.5rem;
+        right: 0.5rem;
+        left: 0.5rem;
+    }
+    .hero-img02 {
+        max-width: 19rem;
+    }
+    .hero-content {
+        width: 100%;
+        height: auto;
+        max-width: 32.9rem;
+        padding: 2.4rem;
+        border-radius: 2rem;
+        position: relative;
+        top: -3rem;
+        left: 0;
+        text-align: center;
+    }
+    .hero-content p{
+        font-size: 1.4rem;
+    }
+    .hero-content h1{
+        font-size: 2.8rem;
+        margin-bottom: 1.4rem;
+    }
+    .hero-content p:last-child{
+        font-size: 1.4rem;
+    }
+}

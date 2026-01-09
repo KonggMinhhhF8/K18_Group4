@@ -1,0 +1,166 @@
+.header__menu{
+    margin: 5rem auto;
+    background: #1C1C1C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1rem solid #262626;
+    border-radius: 10rem;
+    padding: 2rem 3.4rem;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header__menu input {
+    display: none;
+}
+.header__menu .header__menu--mobile {
+    display: none;
+}
+.header__logo{
+    max-width: 100%;
+    flex-shrink: 1;
+}
+.header__menu .navbar__list{
+    list-style: none;
+    display: flex;
+    gap: 2.6rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.header__menu .navbar a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.header__menu .navbar a:hover{
+    background: #262626;
+    padding: 1.2rem 2rem;
+    border: 0.1rem solid transparent;
+    border-radius: 8.2rem;
+}
+.header__menu .action a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.header__menu .action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    gap: 3rem;
+    font-size: 1.8rem;
+}
+.header__menu .action a:last-child{
+    color: #1C1C1C;
+    background: #CAFF33;
+    padding: 2rem 2rem;
+    border: 0.1rem solid transparent;
+    border-radius: 8.2rem;
+}
+@media (max-width: 992px) {
+    .header__menu{
+        max-width: 100%;
+        margin: 3rem auto;
+        padding: 1.4rem 2.4rem;
+    }
+    .header__menu .navbar__list{
+        font-size: 1.4rem;
+    }
+    .header__menu .navbar a:hover {
+        padding: 1rem 1.8rem;
+    }
+    .action__btn{
+        font-size: 1.4rem;
+    }
+    .logo{
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .header__menu{
+        max-width: 100%;
+        margin: 4rem auto;
+    }
+    .header__menu .header__menu--mobile{
+        display: block;
+    }
+    .navbar{
+        display: none;
+        position: absolute;
+        top: 100%; /* Nằm ngay dưới header */
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+    .navbar__list {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        text-align: center;
+        background: #1A1A1A;
+    }
+    .action__btn{
+        display: none;
+    }
+    .header__menu--mobile{
+        display: flex;
+        margin-left: auto;
+    }
+    .menu-icon{
+        cursor: pointer;
+        display: flex;
+        align-items: baseline;
+        position: relative;
+        user-select: none;
+        visibility: visible;
+        border-radius: 8.2rem;
+        padding: 1.5rem 1.5rem;
+        background: #CAFF33;
+    }
+    .menu-icon .navicon{
+        background: #333333;
+        display: block;
+        height: 0.1rem;
+        width: 1.8rem;
+        position: relative;
+    }
+    .menu-icon .navicon:after{
+        background: #333333;
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        transition: all 0.2s ease-out;
+        top: -0.5rem;
+    }
+    .menu-icon .navicon:before {
+        background: #333333;
+        display: block;
+        width: 60%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        transition: all 0.2s ease-out;
+        right: 0;
+        top: 0.5rem;
+    }
+    .menu-btn:checked ~ .navbar {
+        display: block;
+    }
+    /* Hiệu ứng biến hình icon hamburger thành chữ X (Optional) */
+    .menu-btn:checked ~ .header__menu--mobile .navicon {
+        background: transparent;
+    }
+    .menu-btn:checked ~ .header__menu--mobile .navicon::before {
+        transform: rotate(-45deg);
+        top: 0;
+        width: 100%;
+    }
+    .menu-btn:checked ~ .header__menu--mobile .navicon::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+}
