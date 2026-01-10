@@ -1,0 +1,14 @@
+/* --- Mobile & Tablet dọc (Dưới 992px) --- */
+@media (max-width: 992px) {
+    .container{
+        max-width: 128rem;
+        padding: 0 2rem;
+    }
+}
+/* --- Mobile nhỏ (Dưới 768px) --- */
+@media (max-width: 768px) {
+    .container{
+        max-width: 35.8rem;
+        padding: 0 1.6rem;
+    }
+}

@@ -1,0 +1,132 @@
+/* Mission header*/
+.mission-header{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding-right: 30rem;
+    margin-bottom: 8rem;
+}
+.mission-section{
+    margin-bottom: 15rem;
+}
+.mission-section h2{
+    font-weight: 400;
+    font-size: 4.8rem;
+    line-height: 150%;
+    color: #CAFF33;
+}
+.mission-section p{
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: #B3B3B3;
+}
+/* Mission body*/
+.mission-body h3{
+    font-size: 3.8rem;
+}
+.mission-body-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mission-body-bot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mission-img{
+    max-width: 66rem;
+}
+.vision-img{
+    max-width: 66rem;
+}
+.mission-text-top{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: 5rem;
+    border-left: 1px solid #CAFF33;
+}
+.mission-text-bot{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-right: 5rem;
+    border-right: 1px solid #CAFF33;
+}
+@media (max-width: 992px) {
+    .mission-section{
+        margin-bottom: 10rem;
+    }
+    .mission-header {
+        gap: 1rem;
+        padding-right: 15rem;
+        margin-bottom: 6rem;
+    }
+    .mission-section h2 {
+        font-size: 3.8rem;
+    }
+    .mission-section p {
+        font-size: 1.6rem;
+    }
+    /* Mission body */
+    .mission-body-top{
+        margin-bottom: 3rem;
+    }
+    .mission-body h3 {
+        font-size: 3.2rem;
+    }
+    .mission-img{
+        max-width: 33rem;
+    }
+    .vision-img{
+        max-width: 33rem;
+    }
+}
+@media (max-width: 768px) {
+    .mission-section{
+        margin-bottom: 8rem;
+    }
+    .mission-header {
+        padding-right: 0;
+        text-align: center;
+    }
+    .mission-section h2 {
+        font-size: 2.8rem;
+    }
+    .mission-section p {
+        font-size: 1.4rem;
+    }
+    .mission-text h3{
+        font-size: 1.6rem;
+    }
+    .mission-body-top{
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+    .mission-body-bot{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 3rem;
+    }
+    .mission-img{
+        border-bottom: 1px solid #CAFF33;
+    }
+    .vision-img{
+        border-bottom: 1px solid #CAFF33;
+    }
+    .mission-text-top{
+        gap: 3rem;
+        padding-left: 0;
+        padding-top: 3rem;
+        border-left: none;
+    }
+    .mission-text-bot{
+        gap: 3rem;
+        padding-right: 0;
+        padding-top: 3rem;
+        border-right: none;
+    }
+}
