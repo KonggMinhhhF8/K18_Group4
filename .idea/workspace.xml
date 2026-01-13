@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcc56376-450b-4570-ad16-b7529d4b6413" name="Changes" comment="fix footer navbar">
-      <change beforePath="$PROJECT_DIR$/about/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/blend.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/card01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/card02.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/card03.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/card04.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/footer-icon1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/footer-icon2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/footer-icon3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/header-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/hero-img.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/icon-fb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/icon-linkedin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/icon-tweet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/mission.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/piece.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/piece2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/piece3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/images/vision.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/style.css" beforeDir="false" />
-    </list>
+    <list default="true" id="dcc56376-450b-4570-ad16-b7529d4b6413" name="Changes" comment="code remake" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,7 +173,7 @@
       <workItem from="1767946540220" duration="60000" />
       <workItem from="1767977824630" duration="136000" />
       <workItem from="1767977973450" duration="64000" />
-      <workItem from="1767978056310" duration="529000" />
+      <workItem from="1767978056310" duration="881000" />
     </task>
     <task id="LOCAL-00001" summary="first cmt">
       <option name="closed" value="true" />
@@ -407,7 +383,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767036222896</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="code remake">
+      <option name="closed" value="true" />
+      <created>1767978705902</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1767978705902</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,6 +421,7 @@
     <MESSAGE value="responsive fix" />
     <MESSAGE value="fix sticky header" />
     <MESSAGE value="fix footer navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix footer navbar" />
+    <MESSAGE value="code remake" />
+    <option name="LAST_COMMIT_MESSAGE" value="code remake" />
   </component>
 </project>
